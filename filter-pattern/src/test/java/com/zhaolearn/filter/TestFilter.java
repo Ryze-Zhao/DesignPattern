@@ -17,12 +17,12 @@ public class TestFilter {
         List<Fruit> fruits=new ArrayList<>();
         for(int i=0;i<3;i++){
             fruits.add(new Fruit("APPLE","颜色"+i));
-            fruits.add(new Fruit("ORINGE","颜色"+i));
+            fruits.add(new Fruit("ORANGE","颜色"+i));
         }
         Criteria apple=new CriteriaApple();
-        Criteria oringe=new CriteriaOringe();
+        Criteria ORANGE=new CriteriaOrange();
         apple.fruitCriteria(fruits).stream().forEach(e->System.out.println(e));
         System.out.println("以下是橙子标准");
-        oringe.fruitCriteria(fruits).stream().forEach(e->System.out.println(e));
+        ORANGE.fruitCriteria(fruits).stream().forEach(e->System.out.println(e));
     }
 }
