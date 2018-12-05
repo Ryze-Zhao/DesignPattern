@@ -7,5 +7,4 @@ import java.util.List;
  */
 public interface Criteria {
     public List<Fruit> fruitCriteria(List<Fruit> fruits);
-
 }
