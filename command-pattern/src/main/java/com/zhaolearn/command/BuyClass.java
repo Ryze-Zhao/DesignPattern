@@ -5,7 +5,6 @@ public class BuyClass implements Command {
     public BuyClass(RequestClass requestClass){
         this.requestClass = requestClass;
     }
-
     @Override
     public void operate() {
         requestClass.buy();

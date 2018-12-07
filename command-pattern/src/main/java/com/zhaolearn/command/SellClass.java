@@ -5,7 +5,6 @@ public class SellClass implements Command {
     public SellClass(RequestClass requestClass){
         this.requestClass = requestClass;
     }
-
     @Override
     public void operate() {
         requestClass.sell();
