@@ -31,29 +31,25 @@ design-pattern-test测试模块
 13. prox-pattern代理模式
 14. chain-of-esponsibility-pattern责任链模式
 15. command-pattern命令模式
-16. 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
-26. 
-27. 
-28. 
-29. 
-30. 
-31. 
-32. 
-33. 
-34. 
-35. 
-36. 
-37. 
-38. 
+16. interpreter-pattern解释器模式
+17. iteratorr-pattern迭代器模式
+18. mediator-pattern中介者模式
+19. memento-pattern备忘录模式
+20. observer-pattern观察者模式
+21. state-pattern状态模式
+22. null-object-pattern空对象模式
+23. strategy-pattern策略模式
+24. template-pattern模板模式
+25. visitor-pattern访问者模式
+26. mvc-pattern    MVC模式
+27. business-delegate-pattern业务代表模式
+28. composite-entity-pattern组合实体模式
+29. data-access-object-pattern数据访问对象模式
+30. front-controller-pattern前端控制器模式
+31. intercepting-filter-pattern拦截过滤器模式
+32. service-locator-pattern服务定位器模式
+33. transfer-object-pattern传输对象模式
+
 
 
 
