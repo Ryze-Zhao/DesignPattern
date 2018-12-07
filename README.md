@@ -30,7 +30,7 @@ design-pattern-test测试模块
 12. flyweight-pattern享元模式
 13. prox-pattern代理模式
 14. chain-of-esponsibility-pattern责任链模式
-15. 
+15. command-pattern命令模式
 16. 
 17. 
 18. 
