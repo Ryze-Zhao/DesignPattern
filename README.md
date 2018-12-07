@@ -32,7 +32,7 @@ design-pattern-test测试模块
 14. chain-of-esponsibility-pattern责任链模式
 15. command-pattern命令模式
 16. interpreter-pattern解释器模式
-17. iteratorr-pattern迭代器模式
+17. iterator-pattern迭代器模式
 18. mediator-pattern中介者模式
 19. memento-pattern备忘录模式
 20. observer-pattern观察者模式
