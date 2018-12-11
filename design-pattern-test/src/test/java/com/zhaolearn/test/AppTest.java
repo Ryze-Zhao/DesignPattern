@@ -16,7 +16,9 @@ public class AppTest {
      */
     @Test
     public void testInt() {
-
+        for (int i = 0; i < 100; i++) {
+            System.out.println((int)(Math.random() * 300)+600);
+        }
     }
 
 }
