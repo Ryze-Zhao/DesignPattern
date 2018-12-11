@@ -7,6 +7,42 @@
     <groupId>com.zhaolearn</groupId>
     <artifactId>design-pattern</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>design-pattern-test</module>
+        <module>factory-pattern</module>
+        <module>abstract-factory-pattern</module>
+        <module>singleton-pattern</module>
+        <module>builder-pattern</module>
+        <module>prototype-pattern</module>
+        <module>adapter-pattern</module>
+        <module>bridge-pattern</module>
+        <module>filter-pattern</module>
+        <module>composite-pattern</module>
+        <module>decorator-pattern</module>
+        <module>facade-pattern</module>
+        <module>flyweight-pattern</module>
+        <module>prox-pattern</module>
+        <module>chain-of-esponsibility-pattern</module>
+        <module>command-pattern</module>
+        <module>interpreter-pattern</module>
+        <module>iterator-pattern</module>
+        <module>mediator-pattern</module>
+        <module>memento-pattern</module>
+        <module>observer-pattern</module>
+        <module>state-pattern</module>
+        <module>null-object-pattern</module>
+        <module>strategy-pattern</module>
+        <module>template-pattern</module>
+        <module>visitor-pattern</module>
+        <module>mvc-pattern</module>
+        <module>business-delegate-pattern</module>
+        <module>composite-entity-pattern</module>
+        <module>data-access-object-pattern</module>
+        <module>front-controller-pattern</module>
+        <module>intercepting-filter-pattern</module>
+        <module>service-locator-pattern</module>
+        <module>transfer-object-pattern</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
