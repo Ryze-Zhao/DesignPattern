@@ -3,7 +3,7 @@
 #### 项目介绍
 主要是学习设计模式的构建和使用
 可以参考以下汇总：
-http://www.hehaozhao.xin/front/articlePage/4qq4td52t9
+https://www.hehaozhao.top/front/articlePage/4qq4td52t9
 
 #### 软件架构
 软件架构说明
@@ -65,8 +65,5 @@ design-pattern-test测试模块
 
 
 #### 参与贡献
-
 1. RyzeZhao
 
-#### 设计模式博客汇总
-http://www.hehaozhao.xin/front/articlePage/4qq4td52t9
