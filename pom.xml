@@ -43,6 +43,7 @@
         <module>intercepting-filter-pattern</module>
         <module>service-locator-pattern</module>
         <module>transfer-object-pattern</module>
+        <module>single-responsibility-principle</module>
     </modules>
 
     <properties>
