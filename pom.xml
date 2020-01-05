@@ -44,6 +44,7 @@
         <module>service-locator-pattern</module>
         <module>transfer-object-pattern</module>
         <module>single-responsibility-principle</module>
+        <module>interface-segregation-principle</module>
     </modules>
 
     <properties>
