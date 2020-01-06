@@ -60,7 +60,7 @@ design-pattern-test测试模块
 N1. single-responsibility-principle                             单一原则
 N2. interface-segregation-principle                             接口隔离原则
 N3. dependence-inversion-principle                              依赖反转原则
-
+M4. liskov-substitution-principle                               里氏替换原则
 
 
 
