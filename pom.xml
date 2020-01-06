@@ -45,6 +45,7 @@
         <module>transfer-object-pattern</module>
         <module>single-responsibility-principle</module>
         <module>interface-segregation-principle</module>
+        <module>dependence-inversion-principle</module>
     </modules>
 
     <properties>
