@@ -47,6 +47,7 @@
         <module>interface-segregation-principle</module>
         <module>dependence-inversion-principle</module>
         <module>liskov-substitution-principle</module>
+        <module>open-close-principle</module>
     </modules>
 
     <properties>
