@@ -13,9 +13,9 @@ public class TestSingleClass
     @Test
     public void testSingleClass()
     {
-        //获取唯一可用的对象
-        SingleClass single = SingleClass.getInstance();
-        //使用
-        single.showMe();
+//        //获取唯一可用的对象
+//        SingleClass single = SingleClass.getInstance();
+//        //使用
+//        single.showMe();
     }
 }

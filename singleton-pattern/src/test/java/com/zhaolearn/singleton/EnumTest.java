@@ -13,9 +13,9 @@ public class EnumTest
     @Test
     public void testSingleClass6()
     {
-        //获取唯一可用的对象
-        SingleClass6 single = SingleClass6.INSTANCE;
-        //使用
-        single.showMe();
+//        //获取唯一可用的对象
+//        SingleClass6 single = SingleClass6.INSTANCE;
+//        //使用
+//        single.showMe();
     }
 }
