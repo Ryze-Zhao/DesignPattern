@@ -1,4 +1,4 @@
-package com.zhaolearn.singleton;
+package com.zhaolearn.singleton.old.demo;
 
 public enum SingleClass6 {
     INSTANCE;

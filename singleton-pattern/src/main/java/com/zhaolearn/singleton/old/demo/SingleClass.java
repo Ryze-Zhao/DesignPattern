@@ -1,4 +1,4 @@
-package com.zhaolearn.singleton;
+package com.zhaolearn.singleton.old.demo;
 
 /**
  * 饿汉式
