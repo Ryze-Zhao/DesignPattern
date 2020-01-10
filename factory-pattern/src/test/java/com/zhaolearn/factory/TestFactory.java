@@ -2,6 +2,8 @@ package com.zhaolearn.factory;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.factory.old.Fruit;
+import com.zhaolearn.factory.old.FruitFactory;
 import org.junit.Test;
 
 /**
