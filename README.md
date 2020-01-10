@@ -63,7 +63,7 @@ N3. dependence-inversion-principle                              依赖反转原�
 N4. liskov-substitution-principle                               里氏替换原则
 N5. open-close-principle                                        开闭原则
 N6. demeter-principle                                           迪米特原则（最少知道原则）
-
+N7. 无                                                          合成复用原则
 #### 参与贡献
 1. RyzeZhao
 
