@@ -22,7 +22,6 @@ public class SingletonTest06 {
 
 // 静态内部类完成， 推荐使用
 class Singleton {
-	private static volatile Singleton instance;
 	//构造器私有化
 	private Singleton() {}
 	//写一个静态内部类,该类中有一个静态属性 Singleton
