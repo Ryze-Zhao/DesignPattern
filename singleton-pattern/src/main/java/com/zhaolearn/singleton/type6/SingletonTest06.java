@@ -1,17 +1,14 @@
 package com.zhaolearn.singleton.type6;
 
 /**
- * 静态内部类
- *
- *
- *
+ * 双重检查
  *
  * @author: HeHaoZhao
- * @date: 2020/1/10 15:32
+ * @date: 2020/1/10 15:18
  */
 public class SingletonTest06 {
 	public static void main(String[] args) {
-		System.out.println("使用静态内部类完成单例模式");
+		System.out.println("双重检查");
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -20,16 +17,20 @@ public class SingletonTest06 {
 	}
 }
 
-// 静态内部类完成， 推荐使用
+// 双重检查
 class Singleton {
-	//构造器私有化
+	private static volatile Singleton instance;
 	private Singleton() {}
-	//写一个静态内部类,该类中有一个静态属性 Singleton
-	private static class SingletonInstance {
-		private static final Singleton INSTANCE = new Singleton(); 
-	}
-	//提供一个静态的公有方法，直接返回SingletonInstance.INSTANCE
-	public static synchronized Singleton getInstance() {
-		return SingletonInstance.INSTANCE;
+	//提供一个静态的公有方法，加入双重检查代码，解决线程安全问题, 同时解决懒加载问题
+	//同时保证了效率, 推荐使用
+	public static Singleton getInstance() {
+		if(instance == null) {
+			synchronized (Singleton.class) {
+				if(instance == null) {
+					instance = new Singleton();
+				}
+			}
+		}
+		return instance;
 	}
 }

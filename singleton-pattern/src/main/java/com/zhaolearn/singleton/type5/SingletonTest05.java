@@ -1,36 +1,33 @@
 package com.zhaolearn.singleton.type5;
 
 /**
- * 双重检查
+ * 懒汉式(线程安全，同步代码块)
  *
  * @author: HeHaoZhao
- * @date: 2020/1/10 15:18
+ * @date: 2020/1/13 17:28
  */
 public class SingletonTest05 {
-	public static void main(String[] args) {
-		System.out.println("双重检查");
-		Singleton instance = Singleton.getInstance();
-		Singleton instance2 = Singleton.getInstance();
-		System.out.println(instance == instance2); // true
-		System.out.println("instance.hashCode=" + instance.hashCode());
-		System.out.println("instance2.hashCode=" + instance2.hashCode());
-	}
+    public static void main(String[] args) {
+        System.out.println("懒汉式3 ， 线程安全~");
+        Singleton instance = Singleton.getInstance();
+        Singleton instance2 = Singleton.getInstance();
+        System.out.println(instance == instance2); // true
+        System.out.println("instance.hashCode=" + instance.hashCode());
+        System.out.println("instance2.hashCode=" + instance2.hashCode());
+    }
 }
-
-// 双重检查
+// 懒汉式(线程安全，同步代码块)
 class Singleton {
-	private static volatile Singleton instance;
-	private Singleton() {}
-	//提供一个静态的公有方法，加入双重检查代码，解决线程安全问题, 同时解决懒加载问题
-	//同时保证了效率, 推荐使用
-	public static synchronized Singleton getInstance() {
-		if(instance == null) {
-			synchronized (Singleton.class) {
-				if(instance == null) {
-					instance = new Singleton();
-				}
-			}
-		}
-		return instance;
-	}
+    private static Singleton instance;
+    private Singleton() {}
+    //提供一个静态的公有方法，加入同步处理的代码，解决线程安全问题
+    //即懒汉式
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                instance = new Singleton();
+            }
+        }
+        return instance;
+    }
 }
