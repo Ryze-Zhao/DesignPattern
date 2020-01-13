@@ -1,14 +1,14 @@
 package com.zhaolearn.singleton.type5;
 
 /**
- * Ë«ÖØ¼ì²é
+ * åŒé‡æ£€æŸ¥
  *
  * @author: HeHaoZhao
  * @date: 2020/1/10 15:18
  */
 public class SingletonTest05 {
 	public static void main(String[] args) {
-		System.out.println("Ë«ÖØ¼ì²é");
+		System.out.println("åŒé‡æ£€æŸ¥");
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -17,12 +17,12 @@ public class SingletonTest05 {
 	}
 }
 
-// Ë«ÖØ¼ì²é
+// åŒé‡æ£€æŸ¥
 class Singleton {
 	private static volatile Singleton instance;
 	private Singleton() {}
-	//Ìá¹©Ò»¸ö¾²Ì¬µÄ¹«ÓĞ·½·¨£¬¼ÓÈëË«ÖØ¼ì²é´úÂë£¬½â¾öÏß³Ì°²È«ÎÊÌâ, Í¬Ê±½â¾öÀÁ¼ÓÔØÎÊÌâ
-	//Í¬Ê±±£Ö¤ÁËĞ§ÂÊ, ÍÆ¼öÊ¹ÓÃ
+	//æä¾›ä¸€ä¸ªé™æ€çš„å…¬æœ‰æ–¹æ³•ï¼ŒåŠ å…¥åŒé‡æ£€æŸ¥ä»£ç ï¼Œè§£å†³çº¿ç¨‹å®‰å…¨é—®é¢˜, åŒæ—¶è§£å†³æ‡’åŠ è½½é—®é¢˜
+	//åŒæ—¶ä¿è¯äº†æ•ˆç‡, æ¨èä½¿ç”¨
 	public static synchronized Singleton getInstance() {
 		if(instance == null) {
 			synchronized (Singleton.class) {

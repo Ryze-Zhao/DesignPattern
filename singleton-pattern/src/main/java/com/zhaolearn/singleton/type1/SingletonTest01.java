@@ -3,12 +3,12 @@ package com.zhaolearn.singleton.type1;
 
 
 /**
- * ¶öººÊ½(¾²Ì¬±äÁ¿)
+ * é¥¿æ±‰å¼(é™æ€å˜é‡)
  *
- * 1¡¢¹¹ÔìÆ÷Ë½ÓĞ»¯ (·ÀÖ¹ new )
- * 2¡¢ÀàµÄÄÚ²¿´´½¨¶ÔÏó
- * 3¡¢ÏòÍâ±©Â¶Ò»¸ö¾²Ì¬µÄ¹«¹²·½·¨¡£getInstance
- * 4¡¢´úÂëÊµÏÖ
+ * 1ã€æ„é€ å™¨ç§æœ‰åŒ– (é˜²æ­¢ new )
+ * 2ã€ç±»çš„å†…éƒ¨åˆ›å»ºå¯¹è±¡
+ * 3ã€å‘å¤–æš´éœ²ä¸€ä¸ªé™æ€çš„å…¬å…±æ–¹æ³•ã€‚getInstance
+ * 4ã€ä»£ç å®ç°
  *
  *
  * @author: HeHaoZhao
@@ -16,7 +16,7 @@ package com.zhaolearn.singleton.type1;
  */
 public class SingletonTest01 {
 	public static void main(String[] args) {
-		//²âÊÔ
+		//æµ‹è¯•
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -25,12 +25,12 @@ public class SingletonTest01 {
 	}
 }
 
-//¶öººÊ½(¾²Ì¬±äÁ¿)
+//é¥¿æ±‰å¼(é™æ€å˜é‡)
 class Singleton {
-	//1. ¹¹ÔìÆ÷Ë½ÓĞ»¯, ·ÀÖ¹Íâ²¿ÄÜnew
+	//1. æ„é€ å™¨ç§æœ‰åŒ–, é˜²æ­¢å¤–éƒ¨èƒ½new
 	private Singleton() {}
-	//2.±¾ÀàÄÚ²¿´´½¨¶ÔÏóÊµÀı
+	//2.æœ¬ç±»å†…éƒ¨åˆ›å»ºå¯¹è±¡å®ä¾‹
 	private final static Singleton instance = new Singleton();
-	//3. Ìá¹©Ò»¸ö¹«ÓĞµÄ¾²Ì¬·½·¨£¬·µ»ØÊµÀı¶ÔÏó
+	//3. æä¾›ä¸€ä¸ªå…¬æœ‰çš„é™æ€æ–¹æ³•ï¼Œè¿”å›å®ä¾‹å¯¹è±¡
 	public static Singleton getInstance() {return instance;}
 }

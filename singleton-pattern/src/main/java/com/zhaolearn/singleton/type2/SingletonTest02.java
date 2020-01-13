@@ -1,10 +1,10 @@
 package com.zhaolearn.singleton.type2;
 /**
- * ¶öººÊ½£¨¾²Ì¬´úÂë¿é£©
- *	1. ¹¹ÔìÆ÷Ë½ÓĞ»¯, ·ÀÖ¹Íâ²¿ÄÜnew
- *  2.±¾ÀàÄÚ²¿´´½¨¶ÔÏóÊµÀı
- *  3.ÔÚ¾²Ì¬´úÂë¿éÖĞ£¬´´½¨µ¥Àı¶ÔÏó
- *  4. Ìá¹©Ò»¸ö¹«ÓĞµÄ¾²Ì¬·½·¨£¬·µ»ØÊµÀı¶ÔÏó
+ * é¥¿æ±‰å¼ï¼ˆé™æ€ä»£ç å—ï¼‰
+ *	1. æ„é€ å™¨ç§æœ‰åŒ–, é˜²æ­¢å¤–éƒ¨èƒ½new
+ *  2.æœ¬ç±»å†…éƒ¨åˆ›å»ºå¯¹è±¡å®ä¾‹
+ *  3.åœ¨é™æ€ä»£ç å—ä¸­ï¼Œåˆ›å»ºå•ä¾‹å¯¹è±¡
+ *  4. æä¾›ä¸€ä¸ªå…¬æœ‰çš„é™æ€æ–¹æ³•ï¼Œè¿”å›å®ä¾‹å¯¹è±¡
  *
  *
  * @author: HeHaoZhao
@@ -12,7 +12,7 @@ package com.zhaolearn.singleton.type2;
  */
 public class SingletonTest02 {
 	public static void main(String[] args) {
-		//²âÊÔ
+		//æµ‹è¯•
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -21,15 +21,15 @@ public class SingletonTest02 {
 	}
 }
 
-//¶öººÊ½(¾²Ì¬´úÂë¿é)
+//é¥¿æ±‰å¼(é™æ€ä»£ç å—)
 class Singleton {
-	//1. ¹¹ÔìÆ÷Ë½ÓĞ»¯, ·ÀÖ¹Íâ²¿ÄÜnew
+	//1. æ„é€ å™¨ç§æœ‰åŒ–, é˜²æ­¢å¤–éƒ¨èƒ½new
 	private Singleton() {}
-	//2.±¾ÀàÄÚ²¿´´½¨¶ÔÏóÊµÀı
+	//2.æœ¬ç±»å†…éƒ¨åˆ›å»ºå¯¹è±¡å®ä¾‹
 	private  static Singleton instance;
-	//3.ÔÚ¾²Ì¬´úÂë¿éÖĞ£¬´´½¨µ¥Àı¶ÔÏó
+	//3.åœ¨é™æ€ä»£ç å—ä¸­ï¼Œåˆ›å»ºå•ä¾‹å¯¹è±¡
 	static {instance = new Singleton();}
-	//4. Ìá¹©Ò»¸ö¹«ÓĞµÄ¾²Ì¬·½·¨£¬·µ»ØÊµÀı¶ÔÏó
+	//4. æä¾›ä¸€ä¸ªå…¬æœ‰çš„é™æ€æ–¹æ³•ï¼Œè¿”å›å®ä¾‹å¯¹è±¡
 	public static Singleton getInstance() {
 		return instance;
 	}

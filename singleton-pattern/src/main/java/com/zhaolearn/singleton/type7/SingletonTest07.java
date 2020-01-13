@@ -1,7 +1,7 @@
 package com.zhaolearn.singleton.type7;
 
 /**
- * Ã¶¾Ù
+ * æšä¸¾
  *
  * @author: HeHaoZhao
  * @date: 2020/1/10 15:33
@@ -16,9 +16,9 @@ public class SingletonTest07 {
 		instance.sayOK();
 	}
 }
-//Ê¹ÓÃÃ¶¾Ù£¬¿ÉÒÔÊµÏÖµ¥Àı, ÍÆ¼ö
+//ä½¿ç”¨æšä¸¾ï¼Œå¯ä»¥å®ç°å•ä¾‹, æ¨è
 enum Singleton {
-	INSTANCE; //ÊôĞÔ
+	INSTANCE; //å±æ€§
 	public void sayOK() {
 		System.out.println("ok~");
 	}
