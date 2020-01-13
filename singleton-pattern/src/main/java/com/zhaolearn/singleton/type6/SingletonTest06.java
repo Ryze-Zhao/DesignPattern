@@ -19,6 +19,7 @@ public class SingletonTest06 {
 
 // 双重检查
 class Singleton {
+	//必须要volatile，https://blog.csdn.net/weixin_41047933/article/details/88861415
 	private static volatile Singleton instance;
 	private Singleton() {}
 	//提供一个静态的公有方法，加入双重检查代码，解决线程安全问题, 同时解决懒加载问题
