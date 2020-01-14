@@ -1,4 +1,4 @@
-package com.zhaolearn.factory.old;
+package com.zhaolearn.factory;
 
 public class Watermalon  implements Fruit{
     @Override

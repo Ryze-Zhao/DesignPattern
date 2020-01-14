@@ -1,19 +1,7 @@
 package com.zhaolearn.factory;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
 public class TestFactory {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void testFactory()
-    {
+    public static void main(String[] args) {
         FruitFactory fruitFactory=new FruitFactory();
         Fruit fruit1=fruitFactory.getFruit("Apple");
         Fruit fruit2=fruitFactory.getFruit("Orange");
