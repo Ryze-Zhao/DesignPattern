@@ -1,8 +1,8 @@
-package com.zhaolearn.abstractfactory;
+package com.zhaolearn.old;
 
 
-import com.zhaolearn.abstractfactory.color.ColorFactory;
-import com.zhaolearn.abstractfactory.fruit.FruitFactory;
+import com.zhaolearn.old.color.ColorFactory;
+import com.zhaolearn.old.fruit.FruitFactory;
 
 public class FactoryProducer {
     public static AbstractFactory getFactory(String choice){

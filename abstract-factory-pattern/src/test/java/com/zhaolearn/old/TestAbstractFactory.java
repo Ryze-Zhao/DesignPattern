@@ -1,9 +1,9 @@
-package com.zhaolearn.abstractfactory;
+package com.zhaolearn.old;
 
 import static org.junit.Assert.assertTrue;
 
-import com.zhaolearn.abstractfactory.color.*;
-import com.zhaolearn.abstractfactory.fruit.*;
+import com.zhaolearn.old.color.*;
+import com.zhaolearn.old.fruit.*;
 import org.junit.Test;
 
 /**

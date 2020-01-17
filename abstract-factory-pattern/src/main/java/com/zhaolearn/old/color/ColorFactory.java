@@ -1,8 +1,8 @@
-package com.zhaolearn.abstractfactory.color;
+package com.zhaolearn.old.color;
 
 
-import com.zhaolearn.abstractfactory.AbstractFactory;
-import com.zhaolearn.abstractfactory.fruit.Fruit;
+import com.zhaolearn.old.AbstractFactory;
+import com.zhaolearn.old.fruit.Fruit;
 
 public class ColorFactory extends AbstractFactory {
     @Override

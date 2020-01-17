@@ -1,8 +1,8 @@
-package com.zhaolearn.abstractfactory.fruit;
+package com.zhaolearn.old.fruit;
 
 
-import com.zhaolearn.abstractfactory.AbstractFactory;
-import com.zhaolearn.abstractfactory.color.Color;
+import com.zhaolearn.old.AbstractFactory;
+import com.zhaolearn.old.color.Color;
 
 public class FruitFactory  extends AbstractFactory {
     @Override
@@ -10,6 +10,7 @@ public class FruitFactory  extends AbstractFactory {
         return null;
     }
 
+    @Override
     public Fruit getFruit(String fruitName){
         if(fruitName == null){
             return null;

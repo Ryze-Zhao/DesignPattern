@@ -1,7 +1,7 @@
-package com.zhaolearn.abstractfactory;
+package com.zhaolearn.old;
 
-import com.zhaolearn.abstractfactory.color.Color;
-import com.zhaolearn.abstractfactory.fruit.Fruit;
+import com.zhaolearn.old.color.Color;
+import com.zhaolearn.old.fruit.Fruit;
 public abstract  class AbstractFactory {
 
     public abstract Color getColor(String color);

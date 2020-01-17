@@ -1,4 +1,4 @@
-package com.zhaolearn.abstractfactory.fruit;
+package com.zhaolearn.old.fruit;
 
 public class Apple implements Fruit{
     @Override

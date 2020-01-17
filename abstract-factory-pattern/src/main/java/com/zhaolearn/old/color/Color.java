@@ -1,4 +1,4 @@
-package com.zhaolearn.abstractfactory.color;
+package com.zhaolearn.old.color;
 
 public interface Color {
     void tellMeColorName();
