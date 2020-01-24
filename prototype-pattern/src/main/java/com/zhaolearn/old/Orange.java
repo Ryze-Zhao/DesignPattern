@@ -1,4 +1,4 @@
-package com.zhaolearn.prototype;
+package com.zhaolearn.old;
 
 public class Orange extends Fruit {
     public Orange(){

@@ -1,9 +1,10 @@
-package com.zhaolearn.prototype;
+package com.zhaolearn.old;
 
 public abstract class Fruit implements Cloneable {
     private String id;
     protected String variety;//这个可以不用也行
-    abstract void tellMeName();
+    public abstract void tellMeName();
+    @Override
     public Object clone() {
         Object clone = null;
         try {

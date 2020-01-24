@@ -2,6 +2,8 @@ package com.zhaolearn.prototype;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.old.Fruit;
+import com.zhaolearn.old.FruitCache;
 import org.junit.Test;
 
 /**
