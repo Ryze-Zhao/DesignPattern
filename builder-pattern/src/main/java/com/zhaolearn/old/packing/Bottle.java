@@ -1,4 +1,4 @@
-package com.zhaolearn.builder.packing;
+package com.zhaolearn.old.packing;
 
 public class Bottle implements Packing {
     @Override

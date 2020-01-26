@@ -1,4 +1,4 @@
-package com.zhaolearn.builder.colddrink;
+package com.zhaolearn.old.colddrink;
 
 public class Coke extends ColdDrink {
     @Override

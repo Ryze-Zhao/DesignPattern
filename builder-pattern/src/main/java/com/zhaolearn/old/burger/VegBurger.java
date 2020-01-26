@@ -1,4 +1,4 @@
-package com.zhaolearn.builder.burger;
+package com.zhaolearn.old.burger;
 
 public class VegBurger extends Burger {
     @Override

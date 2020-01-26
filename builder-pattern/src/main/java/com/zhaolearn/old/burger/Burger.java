@@ -1,8 +1,8 @@
-package com.zhaolearn.builder.burger;
+package com.zhaolearn.old.burger;
 
-import com.zhaolearn.builder.Item;
-import com.zhaolearn.builder.packing.Packing;
-import com.zhaolearn.builder.packing.Wrapper;
+import com.zhaolearn.old.Item;
+import com.zhaolearn.old.packing.Packing;
+import com.zhaolearn.old.packing.Wrapper;
 
 public abstract class Burger implements Item {
     @Override

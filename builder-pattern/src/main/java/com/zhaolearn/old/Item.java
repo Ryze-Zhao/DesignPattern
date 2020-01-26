@@ -1,6 +1,6 @@
-package com.zhaolearn.builder;
+package com.zhaolearn.old;
 
-import com.zhaolearn.builder.packing.Packing;
+import com.zhaolearn.old.packing.Packing;
 
 public interface Item {
     public String tellMeName();

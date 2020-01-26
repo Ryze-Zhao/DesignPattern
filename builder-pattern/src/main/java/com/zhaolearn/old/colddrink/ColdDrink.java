@@ -1,8 +1,8 @@
-package com.zhaolearn.builder.colddrink;
+package com.zhaolearn.old.colddrink;
 
-import com.zhaolearn.builder.Item;
-import com.zhaolearn.builder.packing.Bottle;
-import com.zhaolearn.builder.packing.Packing;
+import com.zhaolearn.old.Item;
+import com.zhaolearn.old.packing.Bottle;
+import com.zhaolearn.old.packing.Packing;
 
 public abstract class ColdDrink implements Item {
     @Override

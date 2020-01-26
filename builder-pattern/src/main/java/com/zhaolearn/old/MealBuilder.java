@@ -1,9 +1,9 @@
-package com.zhaolearn.builder;
+package com.zhaolearn.old;
 
-import com.zhaolearn.builder.burger.ChickenBurger;
-import com.zhaolearn.builder.burger.VegBurger;
-import com.zhaolearn.builder.colddrink.Coke;
-import com.zhaolearn.builder.colddrink.Pepsi;
+import com.zhaolearn.old.burger.ChickenBurger;
+import com.zhaolearn.old.burger.VegBurger;
+import com.zhaolearn.old.colddrink.Coke;
+import com.zhaolearn.old.colddrink.Pepsi;
 
 public class MealBuilder {
     public Meal prepareVegMeal (){
