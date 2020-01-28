@@ -1,4 +1,4 @@
-package com.zhaolearn.adapter;
+package com.zhaolearn.adapter.old;
 
 public class ComputerUsb implements  ConnectorType{
     UsbAdapter usbAdapter;

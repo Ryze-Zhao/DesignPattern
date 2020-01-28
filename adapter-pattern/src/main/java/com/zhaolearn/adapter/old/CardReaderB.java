@@ -1,4 +1,4 @@
-package com.zhaolearn.adapter;
+package com.zhaolearn.adapter.old;
 
 /**
  * 读卡器B支持MMC

@@ -2,6 +2,7 @@ package com.zhaolearn.adapter;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.adapter.old.ComputerUsb;
 import org.junit.Test;
 
 /**

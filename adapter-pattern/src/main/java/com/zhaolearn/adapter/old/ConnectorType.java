@@ -1,4 +1,4 @@
-package com.zhaolearn.adapter;
+package com.zhaolearn.adapter.old;
 
 /**
  * 不同的接口方式，SD卡，MMC卡，USB
