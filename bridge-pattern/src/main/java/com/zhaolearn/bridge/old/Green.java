@@ -1,4 +1,4 @@
-package com.zhaolearn.bridge;
+package com.zhaolearn.bridge.old;
 
 public class Green implements ColorAPI {
     @Override

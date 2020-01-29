@@ -1,4 +1,4 @@
-package com.zhaolearn.bridge;
+package com.zhaolearn.bridge.old;
 
 public abstract class Fruit {
     protected ColorAPI colorAPI;

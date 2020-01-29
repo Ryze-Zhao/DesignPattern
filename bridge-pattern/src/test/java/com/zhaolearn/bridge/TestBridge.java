@@ -2,6 +2,10 @@ package com.zhaolearn.bridge;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.bridge.old.Fruit;
+import com.zhaolearn.bridge.old.Green;
+import com.zhaolearn.bridge.old.Orange;
+import com.zhaolearn.bridge.old.Red;
 import org.junit.Test;
 
 /**
@@ -10,9 +14,6 @@ import org.junit.Test;
 public class TestBridge {
     @Test
     public void testBridge(){
-        Fruit redFruit = new Orange("大橙子", new Red());
-        Fruit greenFruit = new Orange("小橙子", new Green());
-        redFruit.tellMeKind();
-        greenFruit.tellMeKind();
+
     }
 }
