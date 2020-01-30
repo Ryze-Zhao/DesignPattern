@@ -1,0 +1,8 @@
+package com.zhaolearn.decorator.improve.coffee;
+
+public class Espresso extends Coffee {
+	public Espresso() {
+		setName(" “‚¥Û¿˚øß∑» ");
+		setPrice(6.0f);
+	}
+}
