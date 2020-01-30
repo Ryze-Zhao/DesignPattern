@@ -1,4 +1,4 @@
-package com.zhaolearn.decorator;
+package com.zhaolearn.decorator.old;
 
 public abstract class FruitDecorator implements Fruit{
     protected Fruit decoratedFruit;
@@ -7,6 +7,7 @@ public abstract class FruitDecorator implements Fruit{
         this.decoratedFruit = decoratedShape;
     }
 
+    @Override
     public void tellMeName(){
         decoratedFruit.tellMeName();
     }

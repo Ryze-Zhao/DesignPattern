@@ -1,4 +1,4 @@
-package com.zhaolearn.decorator;
+package com.zhaolearn.decorator.old;
 
 public class RedFruitDecorator extends FruitDecorator{
     public RedFruitDecorator(Fruit decoratedFruit) {
