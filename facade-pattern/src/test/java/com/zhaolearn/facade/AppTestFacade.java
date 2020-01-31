@@ -2,6 +2,7 @@ package com.zhaolearn.facade;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.facade.old.FruitMaker;
 import org.junit.Test;
 
 /**

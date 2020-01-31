@@ -1,4 +1,4 @@
-package com.zhaolearn.facade;
+package com.zhaolearn.facade.old;
 
 public class Orange implements Fruit {
     @Override
