@@ -1,4 +1,4 @@
-package com.zhaolearn.compositeentity;
+package com.zhaolearn.compositeentity.old;
 
 public class CoarseGrainedObject{
     DependentObject1 do1 = new DependentObject1();

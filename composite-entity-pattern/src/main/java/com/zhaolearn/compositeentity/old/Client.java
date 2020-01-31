@@ -1,4 +1,4 @@
-package com.zhaolearn.compositeentity;
+package com.zhaolearn.compositeentity.old;
 
 public class Client {
     private CompositeEntity compositeEntity = new CompositeEntity();

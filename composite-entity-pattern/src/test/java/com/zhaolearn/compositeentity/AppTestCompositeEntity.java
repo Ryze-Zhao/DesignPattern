@@ -2,6 +2,7 @@ package com.zhaolearn.compositeentity;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.compositeentity.old.Client;
 import org.junit.Test;
 
 /**

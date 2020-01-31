@@ -1,4 +1,4 @@
-package com.zhaolearn.compositeentity;
+package com.zhaolearn.compositeentity.old;
 
 public class CompositeEntity{
     private CoarseGrainedObject cgo = new CoarseGrainedObject();
