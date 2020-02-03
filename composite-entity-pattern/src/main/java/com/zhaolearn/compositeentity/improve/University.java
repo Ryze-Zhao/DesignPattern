@@ -7,8 +7,8 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * University ¾ÍÊÇ Composite , ¿ÉÒÔ¹ÜÀíCollege
- * ÎŞ²Î¹¹Ôì·½·¨¡¢Get¡¢Set
+ * University å°±æ˜¯ Composite , å¯ä»¥ç®¡ç†College
+ * æ— å‚æ„é€ æ–¹æ³•ã€Getã€Set
  *
  * @author: HeHaoZhao
  * @date: 2020/1/31 12:11
@@ -18,27 +18,27 @@ import java.util.List;
 @NoArgsConstructor
 public class University extends OrganizationComponent {
 	private List<OrganizationComponent> organizationComponents=new ArrayList<>();
-	//ÖØĞ´nameºÍdes¹¹ÔìÆ÷
+	//é‡å†™nameå’Œdesæ„é€ å™¨
 	public University(String name, String des) {
 		super(name, des);
 	}
 
-	// ·Ç×ÓÒ¶µã  ÒªÖØĞ´add
+	// éå­å¶ç‚¹  è¦é‡å†™add
 	@Override
 	protected void add(OrganizationComponent organizationComponent) {
 		organizationComponents.add(organizationComponent);
 	}
 
-	// ·Ç×ÓÒ¶µã  ÖØĞ´remove
+	// éå­å¶ç‚¹  é‡å†™remove
 	@Override
 	protected void remove(OrganizationComponent organizationComponent) {
 		organizationComponents.remove(organizationComponent);
 	}
-	// print·½·¨£¬¾ÍÊÇÊä³öUniversity °üº¬µÄÑ§Ôº
+	// printæ–¹æ³•ï¼Œå°±æ˜¯è¾“å‡ºUniversity åŒ…å«çš„å­¦é™¢
 	@Override
 	protected void print() {
 		System.out.println("--------------" + getName() + "--------------");
-		//±éÀú organizationComponents 
+		//éå† organizationComponents 
 		for (OrganizationComponent organizationComponent : organizationComponents) {
 			organizationComponent.print();
 		}

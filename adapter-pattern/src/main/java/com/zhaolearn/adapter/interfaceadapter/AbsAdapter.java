@@ -1,6 +1,6 @@
 package com.zhaolearn.adapter.interfaceadapter;
 
-//ÔÚAbsAdapter ÎÒÃÇ½« MyInterface µÄ·½·¨½øĞĞÄ¬ÈÏÊµÏÖ
+//åœ¨AbsAdapter æˆ‘ä»¬å°† MyInterface çš„æ–¹æ³•è¿›è¡Œé»˜è®¤å®ç°
 public abstract class AbsAdapter implements MyInterface {
 	@Override
 	public void m1() {

@@ -1,28 +1,28 @@
 package com.zhaolearn.tradition;
 
 /**
- * Interface1½Ó¿ÚÀàÓĞ5¸ö´ıÊµÏÖ·½·¨£»
- * AÒÀÀµÓÚBÊµÏÖµÄ1£¬2£¬3·½·¨
- * CÒÀÀµÓÚDÊµÏÖµÄ1£¬4£¬5·½·¨
- * Òò´ËB£¬D¶¼ÒªÊµÏÖInterface1µÄ·½·¨
+ * Interface1æ¥å£ç±»æœ‰5ä¸ªå¾…å®ç°æ–¹æ³•ï¼›
+ * Aä¾èµ–äºBå®ç°çš„1ï¼Œ2ï¼Œ3æ–¹æ³•
+ * Cä¾èµ–äºDå®ç°çš„1ï¼Œ4ï¼Œ5æ–¹æ³•
+ * å› æ­¤Bï¼ŒDéƒ½è¦å®ç°Interface1çš„æ–¹æ³•
  *
  *
- * µ«ÊÇÊµ¼ÊÉÏB²»ĞèÒªÊµÏÖ4£¬5·½·¨£¬D²»ĞèÒªÊµÏÖ2£¬3·½·¨£¬µ«ÓÉÓÚ½öÓĞÒ»¸öInterface1½Ó¿ÚÀà£¬Òò´Ëµ¼ÖÂB,DÊµÏÖÁËÎŞĞèÊµÏÖµÄ½Ó¿Ú£¬ËùÒÔ²¢²»·ûºÏ½Ó¿Ú¸ôÀëÔ­Ôò¡£
+ * ä½†æ˜¯å®é™…ä¸ŠBä¸éœ€è¦å®ç°4ï¼Œ5æ–¹æ³•ï¼ŒDä¸éœ€è¦å®ç°2ï¼Œ3æ–¹æ³•ï¼Œä½†ç”±äºä»…æœ‰ä¸€ä¸ªInterface1æ¥å£ç±»ï¼Œå› æ­¤å¯¼è‡´B,Då®ç°äº†æ— éœ€å®ç°çš„æ¥å£ï¼Œæ‰€ä»¥å¹¶ä¸ç¬¦åˆæ¥å£éš”ç¦»åŸåˆ™ã€‚
  */
 public class Tradition {
 	public static void main(String[] args) {
 		A a = new A();
-		a.depend1(new B()); // AÀàÍ¨¹ı½Ó¿ÚÈ¥ÒÀÀµBÀà
+		a.depend1(new B()); // Aç±»é€šè¿‡æ¥å£å»ä¾èµ–Bç±»
 		a.depend2(new B());
 		a.depend3(new B());
 		C c = new C();
-		c.depend1(new D()); // CÀàÍ¨¹ı½Ó¿ÚÈ¥ÒÀÀµ(Ê¹ÓÃ)DÀà
+		c.depend1(new D()); // Cç±»é€šè¿‡æ¥å£å»ä¾èµ–(ä½¿ç”¨)Dç±»
 		c.depend4(new D());
 		c.depend5(new D());
 	}
 }
 
-//½Ó¿Ú
+//æ¥å£
 interface Interface1 {
 	void operation1();
 	void operation2();
@@ -33,41 +33,41 @@ interface Interface1 {
 
 class B implements Interface1 {
 	public void operation1() {
-		System.out.println("B ÊµÏÖÁË operation1");
+		System.out.println("B å®ç°äº† operation1");
 	}
 	public void operation2() {
-		System.out.println("B ÊµÏÖÁË operation2");
+		System.out.println("B å®ç°äº† operation2");
 	}
 	public void operation3() {
-		System.out.println("B ÊµÏÖÁË operation3");
+		System.out.println("B å®ç°äº† operation3");
 	}
 	public void operation4() {
-		System.out.println("B ÊµÏÖÁË operation4");
+		System.out.println("B å®ç°äº† operation4");
 	}
 	public void operation5() {
-		System.out.println("B ÊµÏÖÁË operation5");
+		System.out.println("B å®ç°äº† operation5");
 	}
 }
 
 class D implements Interface1 {
 	public void operation1() {
-		System.out.println("D ÊµÏÖÁË operation1");
+		System.out.println("D å®ç°äº† operation1");
 	}
 	public void operation2() {
-		System.out.println("D ÊµÏÖÁË operation2");
+		System.out.println("D å®ç°äº† operation2");
 	}
 	public void operation3() {
-		System.out.println("D ÊµÏÖÁË operation3");
+		System.out.println("D å®ç°äº† operation3");
 	}
 	public void operation4() {
-		System.out.println("D ÊµÏÖÁË operation4");
+		System.out.println("D å®ç°äº† operation4");
 	}
 	public void operation5() {
-		System.out.println("D ÊµÏÖÁË operation5");
+		System.out.println("D å®ç°äº† operation5");
 	}
 }
 
-class A { //A ÀàÍ¨¹ı½Ó¿ÚInterface1 ÒÀÀµ(Ê¹ÓÃ) BÀà£¬µ«ÊÇÖ»»áÓÃµ½1,2,3·½·¨
+class A { //A ç±»é€šè¿‡æ¥å£Interface1 ä¾èµ–(ä½¿ç”¨) Bç±»ï¼Œä½†æ˜¯åªä¼šç”¨åˆ°1,2,3æ–¹æ³•
 	public void depend1(Interface1 i) {
 		i.operation1();
 	}
@@ -79,7 +79,7 @@ class A { //A ÀàÍ¨¹ı½Ó¿ÚInterface1 ÒÀÀµ(Ê¹ÓÃ) BÀà£¬µ«ÊÇÖ»»áÓÃµ½1,2,3·½·¨
 	}
 }
 
-class C { //C ÀàÍ¨¹ı½Ó¿ÚInterface1 ÒÀÀµ(Ê¹ÓÃ) DÀà£¬µ«ÊÇÖ»»áÓÃµ½1,4,5·½·¨
+class C { //C ç±»é€šè¿‡æ¥å£Interface1 ä¾èµ–(ä½¿ç”¨) Dç±»ï¼Œä½†æ˜¯åªä¼šç”¨åˆ°1,4,5æ–¹æ³•
 	public void depend1(Interface1 i) {
 		i.operation1();
 	}

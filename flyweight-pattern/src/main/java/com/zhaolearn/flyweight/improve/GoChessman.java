@@ -5,17 +5,17 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * ¾ßÌåÎªÎ§ÆåÀà
+ * å…·ä½“ä¸ºå›´æ£‹ç±»
  * @author: HeHaoZhao
  * @date: 2020/2/3 14:48
  */
 @AllArgsConstructor
 @NoArgsConstructor
 public class GoChessman extends Chessman {
-	//¹²ÏíµÄ²¿·Ö£¬ÄÚ²¿×´Ì¬//Æå×ÓÑÕÉ«
+	//å…±äº«çš„éƒ¨åˆ†ï¼Œå†…éƒ¨çŠ¶æ€//æ£‹å­é¢œè‰²
 	private String color;
 	@Override
 	public void setCoordinate(Coordinate coordinate) {
-		System.out.println("Î§ÆåÑÕÉ«£¨ÄÚ²¿×´Ì¬£©Îª:" + color + " ·ÅÔÚ×ø±ê(Íâ²¿×´Ì¬)Îª£ºX:" + coordinate.getX()+" Y:"+coordinate.getY());
+		System.out.println("å›´æ£‹é¢œè‰²ï¼ˆå†…éƒ¨çŠ¶æ€ï¼‰ä¸º:" + color + " æ”¾åœ¨åæ ‡(å¤–éƒ¨çŠ¶æ€)ä¸ºï¼šX:" + coordinate.getX()+" Y:"+coordinate.getY());
 	}
 }

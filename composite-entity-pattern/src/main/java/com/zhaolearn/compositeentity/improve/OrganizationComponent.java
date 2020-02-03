@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 /**
- * ÎŞ²Î¹¹Ôì·½·¨¡¢È«²Î¹¹Ôì·½·¨¡¢Get¡¢Set
+ * æ— å‚æ„é€ æ–¹æ³•ã€å…¨å‚æ„é€ æ–¹æ³•ã€Getã€Set
  *
  * @author: HeHaoZhao
  * @date: 2020/1/31 12:11
@@ -15,16 +15,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public abstract class OrganizationComponent {
-	private String name; // Ãû×Ö
-	private String des; // ËµÃ÷
+	private String name; // åå­—
+	private String des; // è¯´æ˜
 	protected  void add(OrganizationComponent organizationComponent) {
-		//Ä¬ÈÏÊµÏÖ
+		//é»˜è®¤å®ç°
 		throw new UnsupportedOperationException();
 	}
 	protected  void remove(OrganizationComponent organizationComponent) {
-		//Ä¬ÈÏÊµÏÖ
+		//é»˜è®¤å®ç°
 		throw new UnsupportedOperationException();
 	}
-	//·½·¨print, ×ö³É³éÏóµÄ, ×ÓÀà¶¼ĞèÒªÊµÏÖ
+	//æ–¹æ³•print, åšæˆæŠ½è±¡çš„, å­ç±»éƒ½éœ€è¦å®ç°
 	protected abstract void print();
 }

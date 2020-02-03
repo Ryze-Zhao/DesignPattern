@@ -11,12 +11,12 @@ public class DeepCattle implements Serializable, Cloneable {
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private Integer age;
-	//构造器
+	//鏋勯�犲櫒
 	public DeepCattle(String name, Integer age) {
 		this.name = name;
 		this.age = age;
 	}
-	//因为该类的属性，都是String , 因此我们这里使用默认的clone完成即可
+	//鍥犱负璇ョ被鐨勫睘鎬э紝閮芥槸String , 鍥犳鎴戜滑杩欓噷浣跨敤榛樿鐨刢lone瀹屾垚鍗冲彲
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		return super.clone();

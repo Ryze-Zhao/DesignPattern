@@ -1,7 +1,7 @@
 package com.zhaolearn.improve.interfaceim;
 
 /**
- * ľ��
+ * 木屋
  *
  * @author: HeHaoZhao
  * @date: 2020/1/26 9:31
@@ -9,11 +9,11 @@ package com.zhaolearn.improve.interfaceim;
 public class WoodHouse implements HouseBuilder {
     private House house = new House();
     @Override
-    public void buildBasic() {house.setBaise("ľ�ݴ�ػ�");System.out.println("ľ�ݴ�ػ�");}
+    public void buildBasic() {house.setBaise("木屋打地基");System.out.println("木屋打地基");}
     @Override
-    public void buildWalls() {house.setWall("ľ����ǽ");System.out.println("ľ����ǽ");}
+    public void buildWalls() {house.setWall("木屋砌墙");System.out.println("木屋砌墙");}
     @Override
-    public void roofed() {house.setRoofed("ľ�ݷⶥ");System.out.println("ľ�ݷⶥ");}
+    public void roofed() {house.setRoofed("木屋封顶");System.out.println("木屋封顶");}
     @Override
     public House createHouse() {return house;}
 }

@@ -1,13 +1,13 @@
 package com.zhaolearn.adapter.interfaceadapter;
 /**
- * ½Ó¿ÚÊÊÅäÆ÷
+ * æ¥å£é€‚é…å™¨
  *
  *
- * ¹ı³Ì£º
- * 1¡¢ÎÒÃÇ×Ô¼ºµÄ½Ó¿Ú£¨MyInterface£©ÓĞ·½·¨1£¬2£¬3£¬4
- * 2¡¢µ«ÊÇÎÒÃÇÖ»Òª²¿·Ö·½·¨£¬Òò´ËĞèÒªÓĞ¸ö³éÏóÀà×÷Îª½Ó¿ÚÊÊÅäÆ÷£¨AbsAdapter£©
+ * è¿‡ç¨‹ï¼š
+ * 1ã€æˆ‘ä»¬è‡ªå·±çš„æ¥å£ï¼ˆMyInterfaceï¼‰æœ‰æ–¹æ³•1ï¼Œ2ï¼Œ3ï¼Œ4
+ * 2ã€ä½†æ˜¯æˆ‘ä»¬åªè¦éƒ¨åˆ†æ–¹æ³•ï¼Œå› æ­¤éœ€è¦æœ‰ä¸ªæŠ½è±¡ç±»ä½œä¸ºæ¥å£é€‚é…å™¨ï¼ˆAbsAdapterï¼‰
  *
- * ×¢£ºJDK8ºó£¬ÆäÊµ½Ó¿Ú¿ÉÒÔÊ¹ÓÃ default ×÷ÎªÄ¬ÈÏ·½·¨£¬´Ó¶ø¿ÉÒÔ¹æ±Üµô²»ĞèÒªµÄ½Ó¿Ú
+ * æ³¨ï¼šJDK8åï¼Œå…¶å®æ¥å£å¯ä»¥ä½¿ç”¨ default ä½œä¸ºé»˜è®¤æ–¹æ³•ï¼Œä»è€Œå¯ä»¥è§„é¿æ‰ä¸éœ€è¦çš„æ¥å£
  *
  * @author: HeHaoZhao
  * @date: 2020/1/28 17:45
@@ -15,10 +15,10 @@ package com.zhaolearn.adapter.interfaceadapter;
 public class DemoMain {
 	public static void main(String[] args) {
 		AbsAdapter absAdapter = new AbsAdapter() {
-			//Ö»ĞèÒªÈ¥¸²¸ÇÎÒÃÇ ĞèÒªÊ¹ÓÃ ½Ó¿Ú·½·¨
+			//åªéœ€è¦å»è¦†ç›–æˆ‘ä»¬ éœ€è¦ä½¿ç”¨ æ¥å£æ–¹æ³•
 			@Override
 			public void m1() {
-				System.out.println("Ê¹ÓÃÁËm1µÄ·½·¨");
+				System.out.println("ä½¿ç”¨äº†m1çš„æ–¹æ³•");
 			}
 		};
 		absAdapter.m1();

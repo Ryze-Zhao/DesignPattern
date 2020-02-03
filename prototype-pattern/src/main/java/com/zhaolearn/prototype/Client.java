@@ -4,9 +4,9 @@ package com.zhaolearn.prototype;
 
 public class Client {
 	public static void main(String[] args) {
-		System.out.println("Ô­ĞÍÄ£Ê½Íê³É¶ÔÏóµÄ´´½¨");
-		Sheep sheep = new Sheep("¶àÀò");
-		//¿ËÂ¡
+		System.out.println("åŸå‹æ¨¡å¼å®Œæˆå¯¹è±¡çš„åˆ›å»º");
+		Sheep sheep = new Sheep("å¤šè‰");
+		//å…‹éš†
 		Sheep sheep2 = (Sheep)sheep.clone();
 		Sheep sheep3 = (Sheep)sheep.clone();
 		Sheep sheep4 = (Sheep)sheep.clone();

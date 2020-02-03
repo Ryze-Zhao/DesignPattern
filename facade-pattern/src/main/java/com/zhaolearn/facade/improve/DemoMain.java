@@ -1,21 +1,21 @@
 package com.zhaolearn.facade.improve;
 
 /**
- *×é½¨Ò»¸ö¼ÒÍ¥Ó°Ôº£º
- * DVD²¥·ÅÆ÷¡¢Í¶Ó°ÒÇ¡¢×Ô¶¯ÆÁÄ»¡¢»·ÈÆÁ¢ÌåÉù¡¢±¬Ã×»¨»ú,ÒªÇóÍê³ÉÊ¹ÓÃ¼ÒÍ¥Ó°ÔºµÄ ¹¦ÄÜ£¬Æä¹ı³ÌÎª£ºÖ±½ÓÓÃÒ£¿ØÆ÷£ºÍ³³ï¸÷Éè±¸¿ª¹Ø¡¢¿ª±¬Ã×»¨»ú¡¢·ÅÏÂÆÁÄ»¡¢¿ªÍ¶Ó°ÒÇ¡¢¿ªÒôÏì¡¢¿ªDVD£¬Ñ¡dvd¡¢È¥ÄÃ±¬Ã×»¨¡¢µ÷°µµÆ¹â¡¢²¥·Å¡¢¹ÛÓ°½áÊøºó£¬¹Ø±Õ¸÷ÖÖÉè±¸
+ *ç»„å»ºä¸€ä¸ªå®¶åº­å½±é™¢ï¼š
+ * DVDæ’­æ”¾å™¨ã€æŠ•å½±ä»ªã€è‡ªåŠ¨å±å¹•ã€ç¯ç»•ç«‹ä½“å£°ã€çˆ†ç±³èŠ±æœº,è¦æ±‚å®Œæˆä½¿ç”¨å®¶åº­å½±é™¢çš„ åŠŸèƒ½ï¼Œå…¶è¿‡ç¨‹ä¸ºï¼šç›´æ¥ç”¨é¥æ§å™¨ï¼šç»Ÿç­¹å„è®¾å¤‡å¼€å…³ã€å¼€çˆ†ç±³èŠ±æœºã€æ”¾ä¸‹å±å¹•ã€å¼€æŠ•å½±ä»ªã€å¼€éŸ³å“ã€å¼€DVDï¼Œé€‰dvdã€å»æ‹¿çˆ†ç±³èŠ±ã€è°ƒæš—ç¯å…‰ã€æ’­æ”¾ã€è§‚å½±ç»“æŸåï¼Œå…³é—­å„ç§è®¾å¤‡
  *
  * @author: HeHaoZhao
  * @date: 2020/1/31 19:32
  */
 public class DemoMain{
 	public static void main(String[] args) {
-		//ÕâÀïÖ±½Óµ÷ÓÃ¸÷ÀàDVDPlayer¡¢Popcorn¡¢Projector¡¢Screen¡¢Stereo¡¢TheaterLightµÈ±È½ÏÂé·³£¬Òò´ËĞèÒªÊ¹ÓÃHomeTheaterFacadeÍâ¹ÛÀà
+		//è¿™é‡Œç›´æ¥è°ƒç”¨å„ç±»DVDPlayerã€Popcornã€Projectorã€Screenã€Stereoã€TheaterLightç­‰æ¯”è¾ƒéº»çƒ¦ï¼Œå› æ­¤éœ€è¦ä½¿ç”¨HomeTheaterFacadeå¤–è§‚ç±»
 		HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
-		System.out.println("---------×¼±¸·ÅÓ³--------");
+		System.out.println("---------å‡†å¤‡æ”¾æ˜ --------");
 		homeTheaterFacade.ready();
-		System.out.println("---------¿ªÊ¼·ÅÓ³--------");
+		System.out.println("---------å¼€å§‹æ”¾æ˜ --------");
 		homeTheaterFacade.play();
-		System.out.println("---------Í£Ö¹·ÅÓ³--------");
+		System.out.println("---------åœæ­¢æ”¾æ˜ --------");
 		homeTheaterFacade.end();
 	}
 }

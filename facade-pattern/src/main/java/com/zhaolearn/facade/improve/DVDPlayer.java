@@ -1,7 +1,7 @@
 package com.zhaolearn.facade.improve;
 
 public class DVDPlayer {
-	//ʹ�õ���ģʽ, ʹ�ö���ʽ
+	//使用单例模式, 使用饿汉式
 	private static DVDPlayer instance = new DVDPlayer();
 	public static DVDPlayer getInstanc() {
 		return instance;

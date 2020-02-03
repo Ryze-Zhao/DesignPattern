@@ -2,7 +2,7 @@ package com.zhaolearn.tradition;
 
 public class Ocp {
     public static void main(String[] args) {
-        //Ê¹ÓÃ¿´¿´´æÔÚµÄÎÊÌâ
+        //ä½¿ç”¨çœ‹çœ‹å­˜åœ¨çš„é—®é¢˜
         GraphicEditor graphicEditor = new GraphicEditor();
         graphicEditor.drawShape(new Rectangle());
         graphicEditor.drawShape(new Circle());
@@ -10,9 +10,9 @@ public class Ocp {
     }
 }
 
-//ÕâÊÇÒ»¸öÓÃÓÚ»æÍ¼µÄÀà [Ê¹ÓÃ·½],Ê¹ÓÃ·½ĞÂÔöĞèÒªÔÚÕâÀïĞÂÔö¶ÔÓ¦µÄ´úÂë¡£
+//è¿™æ˜¯ä¸€ä¸ªç”¨äºç»˜å›¾çš„ç±» [ä½¿ç”¨æ–¹],ä½¿ç”¨æ–¹æ–°å¢éœ€è¦åœ¨è¿™é‡Œæ–°å¢å¯¹åº”çš„ä»£ç ã€‚
 class GraphicEditor {
-    //½ÓÊÕShape¶ÔÏó£¬È»ºó¸ù¾İtype£¬À´»æÖÆ²»Í¬µÄÍ¼ĞÎ
+    //æ¥æ”¶Shapeå¯¹è±¡ï¼Œç„¶åæ ¹æ®typeï¼Œæ¥ç»˜åˆ¶ä¸åŒçš„å›¾å½¢
     public void drawShape(Shape s) {
         if (s.m_type == 1) {
             drawRectangle(s);
@@ -22,15 +22,15 @@ class GraphicEditor {
             drawTriangle(s);
         }
     }
-    //»æÖÆ¾ØĞÎ
-    public void drawRectangle(Shape r) {System.out.println(" »æÖÆ¾ØĞÎ ");}
-    //»æÖÆÔ²ĞÎ
-    public void drawCircle(Shape r) {System.out.println(" »æÖÆÔ²ĞÎ ");}
-    //»æÖÆÈı½ÇĞÎ
-    public void drawTriangle(Shape r) {System.out.println(" »æÖÆÈı½ÇĞÎ "); }
+    //ç»˜åˆ¶çŸ©å½¢
+    public void drawRectangle(Shape r) {System.out.println(" ç»˜åˆ¶çŸ©å½¢ ");}
+    //ç»˜åˆ¶åœ†å½¢
+    public void drawCircle(Shape r) {System.out.println(" ç»˜åˆ¶åœ†å½¢ ");}
+    //ç»˜åˆ¶ä¸‰è§’å½¢
+    public void drawTriangle(Shape r) {System.out.println(" ç»˜åˆ¶ä¸‰è§’å½¢ "); }
 }
 
-//ShapeÀà£¬»ùÀà
+//Shapeç±»ï¼ŒåŸºç±»
 class Shape {int m_type;}
 
 class Rectangle extends Shape {Rectangle() {
@@ -41,7 +41,7 @@ class Circle extends Shape {Circle() {
         super.m_type = 2;
     }}
 
-//ĞÂÔö»­Èı½ÇĞÎ
+//æ–°å¢ç”»ä¸‰è§’å½¢
 class Triangle extends Shape {Triangle() {
         super.m_type = 3;
     }}

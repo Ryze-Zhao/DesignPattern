@@ -6,42 +6,42 @@ package com.zhaolearn.improve;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
-//¿Í»§¶Ë
+//å®¢æˆ·ç«¯
 public class Demeter {
 	public static void main(String[] args) {
 		SchoolManager schoolManager=new SchoolManager();
 		schoolManager.printAllTeacher(new TeacherManager());
 	}
 }
-//ÀÏÊ¦Àà
+//è€å¸ˆç±»
 @Data
 class Teacher {private String id;}
-//¹ÜÀíÀÏÊ¦µÄÀà
+//ç®¡ç†è€å¸ˆçš„ç±»
 class TeacherManager {
-	//·µ»ØËùÓĞÀÏÊ¦£¨Ä£Äâ¶ÁÈ¡µ½Êı¾İ£©
+	//è¿”å›æ‰€æœ‰è€å¸ˆï¼ˆæ¨¡æ‹Ÿè¯»å–åˆ°æ•°æ®ï¼‰
 	public List<Teacher> getAllTeacher() {
 		List<Teacher> list = new ArrayList<Teacher>();
 		for (int i = 0; i < 5; i++) {
 			Teacher teacher = new Teacher();
-			teacher.setId("ÀÏÊ¦id= " + i);
+			teacher.setId("è€å¸ˆid= " + i);
 			list.add(teacher);
 		}
 		return list;
 	}
 	public void printAllTeacher(){
 		List<Teacher> allTeacher = this.getAllTeacher();
-		System.out.println("------------ÀÏÊ¦------------");
+		System.out.println("------------è€å¸ˆ------------");
 		for (Teacher e : allTeacher) {
 			System.out.println(e.getId());
 		}
 	}
 }
 
-////Ñ§Ğ£¹ÜÀíÀà
+////å­¦æ ¡ç®¡ç†ç±»
 class SchoolManager {
-	//¸Ã·½·¨Íê³ÉÊä³öÑ§Ğ£ÀÏÊ¦ĞÅÏ¢(id)
+	//è¯¥æ–¹æ³•å®Œæˆè¾“å‡ºå­¦æ ¡è€å¸ˆä¿¡æ¯(id)
 	void printAllTeacher(TeacherManager teacherManager) {
-		//ÎªÊ²Ã´main·½·¨Ö±½Óµ÷ÓÃµÄÔ­ÒòÊÇ£¬ÒòÎª¿ÉÄÜÕâÀï²»Ö»Êä³öÀÏÊ¦ĞÅÏ¢£¬»¹¿ÉÄÜÊä³öÑ§ÉúĞÅÏ¢
+		//ä¸ºä»€ä¹ˆmainæ–¹æ³•ç›´æ¥è°ƒç”¨çš„åŸå› æ˜¯ï¼Œå› ä¸ºå¯èƒ½è¿™é‡Œä¸åªè¾“å‡ºè€å¸ˆä¿¡æ¯ï¼Œè¿˜å¯èƒ½è¾“å‡ºå­¦ç”Ÿä¿¡æ¯
 		teacherManager.getAllTeacher();
 	}
 }

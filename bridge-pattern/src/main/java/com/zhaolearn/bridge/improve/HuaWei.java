@@ -2,9 +2,9 @@ package com.zhaolearn.bridge.improve;
 
 public class HuaWei implements Brand {
 	@Override
-	public void open() {System.out.println(" HuaWeiÊÖ»ú¿ª»ú ");}
+	public void open() {System.out.println(" HuaWeiæ‰‹æœºå¼€æœº ");}
 	@Override
-	public void close() {System.out.println(" HuaWeiÊÖ»ú¹Ø»ú ");}
+	public void close() {System.out.println(" HuaWeiæ‰‹æœºå…³æœº ");}
 	@Override
-	public void call() {System.out.println(" HuaWeiÊÖ»ú´òµç»° ");}
+	public void call() {System.out.println(" HuaWeiæ‰‹æœºæ‰“ç”µè¯ ");}
 }

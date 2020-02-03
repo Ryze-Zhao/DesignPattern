@@ -2,7 +2,7 @@ package com.zhaolearn.improve;
 
 public class Ocp {
 	public static void main(String[] args) {
-		//Ê¹ÓÃ¿´¿´´æÔÚµÄÎÊÌâ
+		//ä½¿ç”¨çœ‹çœ‹å­˜åœ¨çš„é—®é¢˜
 		GraphicEditor graphicEditor = new GraphicEditor();
 		graphicEditor.drawShape(new Rectangle());
 		graphicEditor.drawShape(new Circle());
@@ -12,18 +12,18 @@ public class Ocp {
 
 }
 
-//ÕâÊÇÒ»¸öÓÃÓÚ»æÍ¼µÄÀà [Ê¹ÓÃ·½]
+//è¿™æ˜¯ä¸€ä¸ªç”¨äºç»˜å›¾çš„ç±» [ä½¿ç”¨æ–¹]
 class GraphicEditor {
-	//½ÓÊÕShape¶ÔÏó£¬µ÷ÓÃdraw·½·¨
+	//æ¥æ”¶Shapeå¯¹è±¡ï¼Œè°ƒç”¨drawæ–¹æ³•
 	public void drawShape(Shape s) {
 		s.draw();
 	}
 }
 
-//ShapeÀà£¬»ùÀà
+//Shapeç±»ï¼ŒåŸºç±»
 abstract class Shape {
 	int m_type;
-	public abstract void draw();//³éÏó·½·¨
+	public abstract void draw();//æŠ½è±¡æ–¹æ³•
 }
 
 class Rectangle extends Shape {
@@ -31,7 +31,7 @@ class Rectangle extends Shape {
 		super.m_type = 1;
 	}
 	@Override
-	public void draw() {System.out.println(" »æÖÆ¾ØĞÎ ");}
+	public void draw() {System.out.println(" ç»˜åˆ¶çŸ©å½¢ ");}
 }
 
 class Circle extends Shape {
@@ -40,24 +40,24 @@ class Circle extends Shape {
 	}
 	@Override
 	public void draw() {
-		System.out.println(" »æÖÆÔ²ĞÎ ");
+		System.out.println(" ç»˜åˆ¶åœ†å½¢ ");
 	}
 }
 
-//ĞÂÔö»­Èı½ÇĞÎ
+//æ–°å¢ç”»ä¸‰è§’å½¢
 class Triangle extends Shape {
 	Triangle() {
 		super.m_type = 3;
 	}
 	@Override
-	public void draw() {System.out.println(" »æÖÆÈı½ÇĞÎ ");}
+	public void draw() {System.out.println(" ç»˜åˆ¶ä¸‰è§’å½¢ ");}
 }
 
-//ĞÂÔöÒ»¸öÍ¼ĞÎ
+//æ–°å¢ä¸€ä¸ªå›¾å½¢
 class OtherGraphic extends Shape {
 	OtherGraphic() {
 		super.m_type = 4;
 	}
 	@Override
-	public void draw() {System.out.println(" »æÖÆÆäËüÍ¼ĞÎ ");}
+	public void draw() {System.out.println(" ç»˜åˆ¶å…¶å®ƒå›¾å½¢ ");}
 }

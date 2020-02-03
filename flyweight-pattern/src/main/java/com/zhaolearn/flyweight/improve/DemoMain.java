@@ -1,10 +1,10 @@
 package com.zhaolearn.flyweight.improve;
 /**
  *
- * 1    ChessmanFactoryÏàµ±ÓÚFlyWeightFactory£¬¼´ÏíÔª¹¤³§Àà£¬ÓÃÓÚ¹¹½¨Ò»¸ö³ØÈİÆ÷£¨¼¯ºÏ£©£¬Í¬Ê±Ìá¹©´Ó³ØÖĞ»ñÈ¡¶ÔÏó·½·¨
- * 2    ChessmanÏàµ±ÓÚFlyWeight ÊÇ³éÏóµÄÏíÔª½ÇÉ«, ËûÊÇ²úÆ·µÄ³éÏóÀà, Í¬Ê±¶¨Òå³ö¶ÔÏóµÄÍâ²¿×´Ì¬£¨Coordinate£©ºÍÄÚ²¿×´Ì¬(GoChessman) µÄ½Ó¿Ú»òÊµÏÖ
- * 3    GoChessmanÏàµ±ÓÚ ConcreteFlyWeight ÊÇ¾ßÌåµÄÏíÔª½ÇÉ«£¬ÊÇ¾ßÌåµÄ²úÆ·Àà£¬ÊµÏÖ³éÏó½ÇÉ«¶¨ÒåÏà¹ØÒµÎñ£¨ÄÚ²¿×´Ì¬Ö¸¶ÔÏó¹²Ïí³öÀ´µÄĞÅÏ¢£¬´æ´¢ÔÚÏíÔª¶ÔÏóÄÚ²¿ÇÒ²»»áËæ»·¾³µÄ¸Ä±ä¶ø¸Ä±ä£©
- * 4    CoordinateÏàµ±ÓÚ UnSharedConcreteFlWeight ÊÇ²»¿É¹²ÏíµÄ½ÇÉ«£¬Ò»°ã²»»á³öÏÖÔÚÏíÔª¹¤³§¡££¨Íâ²¿×´Ì¬Ö¸¶ÔÏóµÃÒÔÒÀÀµµÄÒ»¸ö±ê¼Ç£¬ÊÇËæ»·¾³¸Ä±ä¶ø¸Ä±äµÄ¡¢²»¿É¹²ÏíµÄ×´Ì¬¡££©
+ * 1    ChessmanFactoryç›¸å½“äºFlyWeightFactoryï¼Œå³äº«å…ƒå·¥å‚ç±»ï¼Œç”¨äºæ„å»ºä¸€ä¸ªæ± å®¹å™¨ï¼ˆé›†åˆï¼‰ï¼ŒåŒæ—¶æä¾›ä»æ± ä¸­è·å–å¯¹è±¡æ–¹æ³•
+ * 2    Chessmanç›¸å½“äºFlyWeight æ˜¯æŠ½è±¡çš„äº«å…ƒè§’è‰², ä»–æ˜¯äº§å“çš„æŠ½è±¡ç±», åŒæ—¶å®šä¹‰å‡ºå¯¹è±¡çš„å¤–éƒ¨çŠ¶æ€ï¼ˆCoordinateï¼‰å’Œå†…éƒ¨çŠ¶æ€(GoChessman) çš„æ¥å£æˆ–å®ç°
+ * 3    GoChessmanç›¸å½“äº ConcreteFlyWeight æ˜¯å…·ä½“çš„äº«å…ƒè§’è‰²ï¼Œæ˜¯å…·ä½“çš„äº§å“ç±»ï¼Œå®ç°æŠ½è±¡è§’è‰²å®šä¹‰ç›¸å…³ä¸šåŠ¡ï¼ˆå†…éƒ¨çŠ¶æ€æŒ‡å¯¹è±¡å…±äº«å‡ºæ¥çš„ä¿¡æ¯ï¼Œå­˜å‚¨åœ¨äº«å…ƒå¯¹è±¡å†…éƒ¨ä¸”ä¸ä¼šéšç¯å¢ƒçš„æ”¹å˜è€Œæ”¹å˜ï¼‰
+ * 4    Coordinateç›¸å½“äº UnSharedConcreteFlWeight æ˜¯ä¸å¯å…±äº«çš„è§’è‰²ï¼Œä¸€èˆ¬ä¸ä¼šå‡ºç°åœ¨äº«å…ƒå·¥å‚ã€‚ï¼ˆå¤–éƒ¨çŠ¶æ€æŒ‡å¯¹è±¡å¾—ä»¥ä¾èµ–çš„ä¸€ä¸ªæ ‡è®°ï¼Œæ˜¯éšç¯å¢ƒæ”¹å˜è€Œæ”¹å˜çš„ã€ä¸å¯å…±äº«çš„çŠ¶æ€ã€‚ï¼‰
  *
  *
  *
@@ -15,21 +15,21 @@ package com.zhaolearn.flyweight.improve;
  */
 public class DemoMain {
 	public static void main(String[] args) {
-		// ´´½¨Ò»¸ö¹¤³§Àà
+		// åˆ›å»ºä¸€ä¸ªå·¥å‚ç±»
 		ChessmanFactory factory = new ChessmanFactory();
 
-		Chessman blackGoChessman = factory.getGoChessman("ºÚÉ«");
+		Chessman blackGoChessman = factory.getGoChessman("é»‘è‰²");
 		blackGoChessman.setCoordinate(new Coordinate(1,2));
 
-		Chessman whiteGoChessman = factory.getGoChessman("°×É«");
+		Chessman whiteGoChessman = factory.getGoChessman("ç™½è‰²");
 		whiteGoChessman.setCoordinate(new Coordinate(1,3));
 
-		Chessman blackGoChessman1 = factory.getGoChessman("ºÚÉ«");
+		Chessman blackGoChessman1 = factory.getGoChessman("é»‘è‰²");
 		blackGoChessman1.setCoordinate(new Coordinate(3,2));
 
-		Chessman whiteGoChessman1 = factory.getGoChessman("°×É«");
+		Chessman whiteGoChessman1 = factory.getGoChessman("ç™½è‰²");
 		whiteGoChessman1.setCoordinate(new Coordinate(4,3));
 
-		System.out.println("Æå×Ó·ÖÀà¹²=" + factory.getGoChessmanCount());
+		System.out.println("æ£‹å­åˆ†ç±»å…±=" + factory.getGoChessmanCount());
 	}
 }

@@ -1,7 +1,7 @@
 package com.zhaolearn.facade.improve;
 
 public class HomeTheaterFacade {
-	//¶¨Òå¸÷¸ö×ÓÏµÍ³¶ÔÏó
+	//å®šä¹‰å„ä¸ªå­ç³»ç»Ÿå¯¹è±¡
 	private TheaterLight theaterLight;
 	private Popcorn popcorn;
 	private Stereo stereo;
@@ -9,7 +9,7 @@ public class HomeTheaterFacade {
 	private Screen screen;
 	private DVDPlayer dVDPlayer;
 
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public HomeTheaterFacade() {
 		super();
 		this.theaterLight = TheaterLight.getInstance();
@@ -20,9 +20,9 @@ public class HomeTheaterFacade {
 		this.dVDPlayer = DVDPlayer.getInstanc();
 	}
 
-	//²Ù×÷·Ö³É 4 ²½
+	//æ“ä½œåˆ†æˆ 4 æ­¥
 	/**
-	 * Ò»¼ü¿ªÆô
+	 * ä¸€é”®å¼€å¯
 	 */
 	public void ready() {
 		popcorn.on();
@@ -35,20 +35,20 @@ public class HomeTheaterFacade {
 	}
 
 	/**
-	 * ²¥·ÅDVD
+	 * æ’­æ”¾DVD
 	 */
 	public void play() {
 		dVDPlayer.play();
 	}
 
 	/**
-	 * ÔİÍ£DVD
+	 * æš‚åœDVD
 	 */
 	public void pause() {
 		dVDPlayer.pause();
 	}
 	/**
-	 * ¹Ø±Õ·ÅÓ³
+	 * å…³é—­æ”¾æ˜ 
 	 */
 	public void end() {
 		popcorn.off();

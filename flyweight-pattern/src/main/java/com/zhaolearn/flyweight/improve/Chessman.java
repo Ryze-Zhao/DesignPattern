@@ -1,12 +1,12 @@
 package com.zhaolearn.flyweight.improve;
 /**
  *
- * Æå×Ó³éÏóÀà£¬¾ßÌåÀàĞÍÆå×Ó£¨¹ú¼ÊÏóÆå£¬ÖĞ¹úÏóÆå£¬Î§ÆåµÈ£©ÓÉ¾ßÌåµÄ×ÓÀàÊµÏÖ
+ * æ£‹å­æŠ½è±¡ç±»ï¼Œå…·ä½“ç±»å‹æ£‹å­ï¼ˆå›½é™…è±¡æ£‹ï¼Œä¸­å›½è±¡æ£‹ï¼Œå›´æ£‹ç­‰ï¼‰ç”±å…·ä½“çš„å­ç±»å®ç°
  * @return:
  * @author: HeHaoZhao
  * @date: 2020/2/3 14:48
  */
 public abstract class Chessman {
-	//³éÏó·½·¨
+	//æŠ½è±¡æ–¹æ³•
 	public abstract void setCoordinate(Coordinate coordinate);
 }

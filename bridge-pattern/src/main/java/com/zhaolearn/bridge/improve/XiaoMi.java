@@ -2,9 +2,9 @@ package com.zhaolearn.bridge.improve;
 
 public class XiaoMi implements Brand {
 	@Override
-	public void open() {System.out.println(" Ğ¡Ã×ÊÖ»ú¿ª»ú ");}
+	public void open() {System.out.println(" å°ç±³æ‰‹æœºå¼€æœº ");}
 	@Override
-	public void close() {System.out.println(" Ğ¡Ã×ÊÖ»ú¹Ø»ú ");}
+	public void close() {System.out.println(" å°ç±³æ‰‹æœºå…³æœº ");}
 	@Override
-	public void call() {System.out.println(" Ğ¡Ã×ÊÖ»ú´òµç»° ");}
+	public void call() {System.out.println(" å°ç±³æ‰‹æœºæ‰“ç”µè¯ ");}
 }

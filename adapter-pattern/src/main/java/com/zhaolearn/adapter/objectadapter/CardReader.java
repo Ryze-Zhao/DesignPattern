@@ -1,10 +1,10 @@
 package com.zhaolearn.adapter.objectadapter;
 
 
-//ÊÊÅä½Ó¿Ú
+//é€‚é…æ¥å£
 public interface CardReader {
 	/**
-	 * ¶Á¿¨Æ÷Á¬½ÓUSB½Ó¿Ú£¬²¢½«µçÁ÷½µµÍÖÁÒ»°ë
+	 * è¯»å¡å™¨è¿æ¥USBæ¥å£ï¼Œå¹¶å°†ç”µæµé™ä½è‡³ä¸€åŠ
 	 */
 	int sdConnectUSB();
 }

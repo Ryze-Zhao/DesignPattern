@@ -1,6 +1,6 @@
 package com.zhaolearn.bridge.improve;
 
-//行为接口
+//琛屼负鎺ュ彛
 public interface Brand {
 	void open();
 	void close();

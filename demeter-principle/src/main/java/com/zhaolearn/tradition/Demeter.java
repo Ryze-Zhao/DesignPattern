@@ -5,7 +5,7 @@ package com.zhaolearn.tradition;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
-//¿Í»§¶Ë
+//å®¢æˆ·ç«¯
 public class Demeter {
 	public static void main(String[] args) {
 		SchoolManager schoolManager=new SchoolManager();
@@ -13,35 +13,35 @@ public class Demeter {
 	}
 }
 
-//ÀÏÊ¦Àà
+//è€å¸ˆç±»
 @Data
 class Teacher {private String id;}
 
-//¹ÜÀíÀÏÊ¦µÄÀà
+//ç®¡ç†è€å¸ˆçš„ç±»
 class TeacherManager {
-	//·µ»ØËùÓĞÀÏÊ¦£¨Ä£Äâ¶ÁÈ¡µ½Êı¾İ£©
+	//è¿”å›æ‰€æœ‰è€å¸ˆï¼ˆæ¨¡æ‹Ÿè¯»å–åˆ°æ•°æ®ï¼‰
 	public List<Teacher> getAllTeacher() {
 		List<Teacher> list = new ArrayList<Teacher>();
 		for (int i = 0; i < 5; i++) {
 			Teacher teacher = new Teacher();
-			teacher.setId("ÀÏÊ¦id= " + i);
+			teacher.setId("è€å¸ˆid= " + i);
 			list.add(teacher);
 		}
 		return list;
 	}
 }
 
-////Ñ§Ğ£¹ÜÀíÀà
-//SchoolManagerµÄÖ±½ÓÅóÓÑÀàÓĞTeacherManager£¨×÷Îª²ÎÊı£© £¬µ«ÊÇTeacherÖ»ÊÇÄ°ÉúÀà£¨Ö»×÷Îª¾Ö²¿±äÁ¿£©Î¥·´ÁËµÏÃ×ÌØ·¨Ôò
+////å­¦æ ¡ç®¡ç†ç±»
+//SchoolManagerçš„ç›´æ¥æœ‹å‹ç±»æœ‰TeacherManagerï¼ˆä½œä¸ºå‚æ•°ï¼‰ ï¼Œä½†æ˜¯Teacheråªæ˜¯é™Œç”Ÿç±»ï¼ˆåªä½œä¸ºå±€éƒ¨å˜é‡ï¼‰è¿åäº†è¿ªç±³ç‰¹æ³•åˆ™
 class SchoolManager {
-	//¸Ã·½·¨Íê³ÉÊä³öÑ§Ğ£ÀÏÊ¦ĞÅÏ¢(id)
+	//è¯¥æ–¹æ³•å®Œæˆè¾“å‡ºå­¦æ ¡è€å¸ˆä¿¡æ¯(id)
 	void printAllTeacher(TeacherManager teacherManager) {
-		//·ÖÎöÎÊÌâ
-		//1. ÕâÀïµÄ Teacher ²»ÊÇ  SchoolManagerµÄÖ±½ÓÅóÓÑ
-		//2. Teacher ÊÇÒÔ¾Ö²¿±äÁ¿·½Ê½³öÏÖÔÚ SchoolManager
-		//3. Î¥·´ÁË µÏÃ×ÌØ·¨Ôò
+		//åˆ†æé—®é¢˜
+		//1. è¿™é‡Œçš„ Teacher ä¸æ˜¯  SchoolManagerçš„ç›´æ¥æœ‹å‹
+		//2. Teacher æ˜¯ä»¥å±€éƒ¨å˜é‡æ–¹å¼å‡ºç°åœ¨ SchoolManager
+		//3. è¿åäº† è¿ªç±³ç‰¹æ³•åˆ™
 		List<Teacher> allTeacher = teacherManager.getAllTeacher();
-		System.out.println("------------ÀÏÊ¦------------");
+		System.out.println("------------è€å¸ˆ------------");
 		for (Teacher e : allTeacher) {
 			System.out.println(e.getId());
 		}

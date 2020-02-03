@@ -1,14 +1,14 @@
 package com.zhaolearn.tradition;
 /**
- * Ë®ÄàÎİ
+ * æ°´æ³¥å±‹
  * @author: HeHaoZhao
  * @date: 2020/1/26 9:31
  */
 public class CementHouse extends AbstractHouse {
 	@Override
-	public void buildBasic() {System.out.println("Ë®ÄàÎİ´òµØ»ù ");}
+	public void buildBasic() {System.out.println("æ°´æ³¥å±‹æ‰“åœ°åŸº ");}
 	@Override
-	public void buildWalls() {System.out.println("Ë®ÄàÎİÆöÇ½ ");}
+	public void buildWalls() {System.out.println("æ°´æ³¥å±‹ç Œå¢™ ");}
 	@Override
-	public void roofed() {System.out.println("Ë®ÄàÎİ·â¶¥ ");}
+	public void roofed() {System.out.println("æ°´æ³¥å±‹å°é¡¶ ");}
 }

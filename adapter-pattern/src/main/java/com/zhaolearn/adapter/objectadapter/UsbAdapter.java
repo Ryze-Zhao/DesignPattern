@@ -2,22 +2,22 @@ package com.zhaolearn.adapter.objectadapter;
 
 
 /**
- * ÊÊÅäÆ÷Àà£¨¶Á¿¨Æ÷£©£¬½øĞĞÊÊÅä²Ù×÷¡£
+ * é€‚é…å™¨ç±»ï¼ˆè¯»å¡å™¨ï¼‰ï¼Œè¿›è¡Œé€‚é…æ“ä½œã€‚
  *
  * @author: HeHaoZhao
  * @date: 2020/1/28 16:11
  */
 public class UsbAdapter implements CardReader {
-    //¶ÔÏóÊÊÅäÆ÷¸ü¸Ä£ºÕâÀïÊ¹ÓÃ½Ó¿ÚµÄºÃ´¦£¬±Ï¾¹ÒÔºó¿ÉÄÜ²»Ö»Ò»¸ö¡£
+    //å¯¹è±¡é€‚é…å™¨æ›´æ”¹ï¼šè¿™é‡Œä½¿ç”¨æ¥å£çš„å¥½å¤„ï¼Œæ¯•ç«Ÿä»¥åå¯èƒ½ä¸åªä¸€ä¸ªã€‚
     private ConnectorType connectorType;
     public UsbAdapter(ConnectorType connectorType) {
         this.connectorType = connectorType;
     }
     @Override
     public int sdConnectUSB() {
-        //ÕâÀïÖ»ÊÇÄ£ÄâÊµ¼ÊµçÁ÷½µÁ÷¡£
+        //è¿™é‡Œåªæ˜¯æ¨¡æ‹Ÿå®é™…ç”µæµé™æµã€‚
         int electricCurrent = connectorType.provideUSB() / 2;
-        System.out.println("¶Á¿¨Æ÷Á¬½ÓÖÁUSB½Ó¿Ú£¬²¢½«µçÁ÷½µµÍÎª500mA");
+        System.out.println("è¯»å¡å™¨è¿æ¥è‡³USBæ¥å£ï¼Œå¹¶å°†ç”µæµé™ä½ä¸º500mA");
         return electricCurrent;
     }
 }

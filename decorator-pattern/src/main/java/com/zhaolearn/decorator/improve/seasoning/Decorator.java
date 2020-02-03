@@ -5,17 +5,17 @@ import com.zhaolearn.decorator.improve.Drink;
 
 public class Decorator extends Drink {
 	private Drink drink;
-	public Decorator(Drink drink) { //×éºÏ
+	public Decorator(Drink drink) { //ç»„åˆ
 		this.drink = drink;
 	}
 	@Override
 	public float cost() {
-		// getPriceµ÷Æ·µÄ¼Û¸ñ+±»×°ÊÎµÄ¼Û¸ñ
+		// getPriceè°ƒå“çš„ä»·æ ¼+è¢«è£…é¥°çš„ä»·æ ¼
 		return super.getPrice() + drink.cost();
 	}
 	@Override
 	public String getName() {
-		// drink.getName() Êä³ö±»×°ÊÎÕßµÄĞÅÏ¢
+		// drink.getName() è¾“å‡ºè¢«è£…é¥°è€…çš„ä¿¡æ¯
 		return super.getName() + " " + getPrice() + " && " + drink.getName();
 	}
 }

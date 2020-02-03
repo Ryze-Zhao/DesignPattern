@@ -1,8 +1,8 @@
 package com.zhaolearn.improve.interfaceim;
 
-//Ö¸»ÓÕß£¬ÕâÀïÈ¥Ö¸¶¨ÖÆ×÷Á÷³Ì£¬·µ»Ø²úÆ·
+//æŒ‡æŒ¥è€…ï¼Œè¿™é‡Œå»æŒ‡å®šåˆ¶ä½œæµç¨‹ï¼Œè¿”å›äº§å“
 public class HouseDirector {
-	//ÈçºÎ´¦Àí½¨Ôì·¿×ÓµÄÁ÷³Ì£¬½»¸øÖ¸»ÓÕß
+	//å¦‚ä½•å¤„ç†å»ºé€ æˆ¿å­çš„æµç¨‹ï¼Œäº¤ç»™æŒ‡æŒ¥è€…
 	public House constructHouse(HouseBuilder houseBuilder) {
 		houseBuilder.buildBasic();
 		houseBuilder.buildWalls();

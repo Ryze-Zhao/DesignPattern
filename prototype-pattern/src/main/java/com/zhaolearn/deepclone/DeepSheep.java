@@ -5,8 +5,8 @@ import lombok.Setter;
 import lombok.ToString;
 import java.io.*;
 /**
- * ÑòÀà£º
- *  ×¢Òâ£º1¡¢²»ÄÜÊ¹ÓÃ@Data×¢½â£¬ÒòÎª³ıÁËGet/Set£¬»¹ÓĞhashCode¡¢equals¡¢toStringÖØĞ´
+ * ç¾Šç±»ï¼š
+ *  æ³¨æ„ï¼š1ã€ä¸èƒ½ä½¿ç”¨@Dataæ³¨è§£ï¼Œå› ä¸ºé™¤äº†Get/Setï¼Œè¿˜æœ‰hashCodeã€equalsã€toStringé‡å†™
  *
  * @author: HeHaoZhao
  * @date: 2020/1/24 22:25
@@ -15,37 +15,37 @@ import java.io.*;
 @Setter
 @ToString
 public class DeepSheep implements Serializable, Cloneable {
-    private String name; //String ÊôĞÔ
-    private DeepCattle deepCattle;// ÒıÓÃÀàĞÍ
+    private String name; //String å±æ€§
+    private DeepCattle deepCattle;// å¼•ç”¨ç±»å‹
     public DeepSheep() {}
     public DeepSheep(String name, DeepCattle deepCattle) {
         this.name = name;
         this.deepCattle = deepCattle;
     }
-    //Éî¿½±´ - ·½Ê½ 1 Ê¹ÓÃclone ·½·¨
+    //æ·±æ‹·è´ - æ–¹å¼ 1 ä½¿ç”¨clone æ–¹æ³•
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        //ÕâÀïÍê³É¶Ô»ù±¾Êı¾İÀàĞÍ(ÊôĞÔ)ºÍStringµÄ¿ËÂ¡
+        //è¿™é‡Œå®Œæˆå¯¹åŸºæœ¬æ•°æ®ç±»å‹(å±æ€§)å’ŒStringçš„å…‹éš†
         Object deep = super.clone();
-        //¶ÔÒıÓÃÀàĞÍµÄÊôĞÔ£¬½øĞĞµ¥¶À´¦Àí
+        //å¯¹å¼•ç”¨ç±»å‹çš„å±æ€§ï¼Œè¿›è¡Œå•ç‹¬å¤„ç†
         DeepSheep deepProtoType = (DeepSheep) deep;
         deepProtoType.deepCattle = (DeepCattle) deepCattle.clone();
         return deepProtoType;
     }
 
-    //Éî¿½±´ - ·½Ê½2 Í¨¹ı¶ÔÏóµÄĞòÁĞ»¯ÊµÏÖ (ÍÆ¼ö)
+    //æ·±æ‹·è´ - æ–¹å¼2 é€šè¿‡å¯¹è±¡çš„åºåˆ—åŒ–å®ç° (æ¨è)
     public Object deepClone() {
-        //´´½¨Á÷¶ÔÏó
+        //åˆ›å»ºæµå¯¹è±¡
         ByteArrayOutputStream bos = null;
         ObjectOutputStream oos = null;
         ByteArrayInputStream bis = null;
         ObjectInputStream ois = null;
         try {
-            //ĞòÁĞ»¯
+            //åºåˆ—åŒ–
             bos = new ByteArrayOutputStream();
             oos = new ObjectOutputStream(bos);
-            oos.writeObject(this); //µ±Ç°Õâ¸ö¶ÔÏóÒÔ¶ÔÏóÁ÷µÄ·½Ê½Êä³ö
-            //·´ĞòÁĞ»¯
+            oos.writeObject(this); //å½“å‰è¿™ä¸ªå¯¹è±¡ä»¥å¯¹è±¡æµçš„æ–¹å¼è¾“å‡º
+            //ååºåˆ—åŒ–
             bis = new ByteArrayInputStream(bos.toByteArray());
             ois = new ObjectInputStream(bis);
             DeepSheep copyObj = (DeepSheep) ois.readObject();
@@ -54,7 +54,7 @@ public class DeepSheep implements Serializable, Cloneable {
             e.printStackTrace();
             return null;
         } finally {
-            //¹Ø±ÕÁ÷
+            //å…³é—­æµ
             try {
                 bos.close();
                 oos.close();

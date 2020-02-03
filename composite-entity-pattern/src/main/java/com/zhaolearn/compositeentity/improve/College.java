@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * College ¾ÍÊÇ Composite , ¿ÉÒÔ¹ÜÀíDepartment
- * ÎŞ²Î¹¹Ôì·½·¨¡¢Get¡¢Set
+ * College å°±æ˜¯ Composite , å¯ä»¥ç®¡ç†Department
+ * æ— å‚æ„é€ æ–¹æ³•ã€Getã€Set
  *
  * @author: HeHaoZhao
  * @date: 2020/1/31 12:11
@@ -17,30 +17,30 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class College extends OrganizationComponent {
-	//List ÖĞ ´æ·ÅµÄDepartment£¬ÒòÎªÆä²»ÊÇ×ÓÒ¶µã£¬ËùÒÔĞèÒªÓĞÒ»¸öList
+	//List ä¸­ å­˜æ”¾çš„Departmentï¼Œå› ä¸ºå…¶ä¸æ˜¯å­å¶ç‚¹ï¼Œæ‰€ä»¥éœ€è¦æœ‰ä¸€ä¸ªList
 	private List<OrganizationComponent> organizationComponents=new ArrayList<>();
 
-	//ÖØĞ´nameºÍdes¹¹ÔìÆ÷
+	//é‡å†™nameå’Œdesæ„é€ å™¨
 	public College(String name, String des) {
 		super(name, des);
 	}
 
-	// ÖØĞ´add
+	// é‡å†™add
 	@Override
 	protected void add(OrganizationComponent organizationComponent) {
-		//  ½«À´Êµ¼ÊÒµÎñÖĞ£¬Colleage µÄ add ºÍ  University add ²»Ò»¶¨ÍêÈ«Ò»Ñù
+		//  å°†æ¥å®é™…ä¸šåŠ¡ä¸­ï¼ŒColleage çš„ add å’Œ  University add ä¸ä¸€å®šå®Œå…¨ä¸€æ ·
 		organizationComponents.add(organizationComponent);
 	}
-	// ÖØĞ´remove
+	// é‡å†™remove
 	@Override
 	protected void remove(OrganizationComponent organizationComponent) {
 		organizationComponents.remove(organizationComponent);
 	}
-	// print·½·¨£¬¾ÍÊÇÊä³öUniversity °üº¬µÄÑ§Ôº
+	// printæ–¹æ³•ï¼Œå°±æ˜¯è¾“å‡ºUniversity åŒ…å«çš„å­¦é™¢
 	@Override
 	protected void print() {
 		System.out.println("--------------" + getName() + "--------------");
-		//±éÀú organizationComponents 
+		//éå† organizationComponents 
 		for (OrganizationComponent organizationComponent : organizationComponents) {
 			organizationComponent.print();
 		}

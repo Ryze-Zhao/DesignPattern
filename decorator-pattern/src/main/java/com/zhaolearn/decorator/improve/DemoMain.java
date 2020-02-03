@@ -7,34 +7,34 @@ import com.zhaolearn.decorator.improve.seasoning.Milk;
 
 public class DemoMain {
 	public static void main(String[] args) {
-		// ×°ÊÎÕßÄ£Ê½ÏÂµÄ¶©µ¥£º2·İÇÉ¿ËÁ¦+Ò»·İÅ£ÄÌµÄLongBlack
-		// 1. µãÒ»·İ LongBlack
+		// è£…é¥°è€…æ¨¡å¼ä¸‹çš„è®¢å•ï¼š2ä»½å·§å…‹åŠ›+ä¸€ä»½ç‰›å¥¶çš„LongBlack
+		// 1. ç‚¹ä¸€ä»½ LongBlack
 		Drink order = new LongBlack();
-		System.out.println("·ÑÓÃ1=" + order.cost());
-		System.out.println("Ãû×Ö=" + order.getName());
+		System.out.println("è´¹ç”¨1=" + order.cost());
+		System.out.println("åå­—=" + order.getName());
 
-		// 2. order ¼ÓÈëÒ»·İÅ£ÄÌ
+		// 2. order åŠ å…¥ä¸€ä»½ç‰›å¥¶
 		order = new Milk(order);
-		System.out.println("order ¼ÓÈëÒ»·İÅ£ÄÌ ·ÑÓÃ =" + order.cost());
-		System.out.println("order ¼ÓÈëÒ»·İÅ£ÄÌ Ãû×Ö = " + order.getName());
+		System.out.println("order åŠ å…¥ä¸€ä»½ç‰›å¥¶ è´¹ç”¨ =" + order.cost());
+		System.out.println("order åŠ å…¥ä¸€ä»½ç‰›å¥¶ åå­— = " + order.getName());
 
-		// 3. order ¼ÓÈëÒ»·İÇÉ¿ËÁ¦
+		// 3. order åŠ å…¥ä¸€ä»½å·§å…‹åŠ›
 		order = new Chocolate(order);
-		System.out.println("order ¼ÓÈëÒ»·İÅ£ÄÌ ¼ÓÈëÒ»·İÇÉ¿ËÁ¦  ·ÑÓÃ =" + order.cost());
-		System.out.println("order ¼ÓÈëÒ»·İÅ£ÄÌ ¼ÓÈëÒ»·İÇÉ¿ËÁ¦ Ãû×Ö = " + order.getName());
+		System.out.println("order åŠ å…¥ä¸€ä»½ç‰›å¥¶ åŠ å…¥ä¸€ä»½å·§å…‹åŠ›  è´¹ç”¨ =" + order.cost());
+		System.out.println("order åŠ å…¥ä¸€ä»½ç‰›å¥¶ åŠ å…¥ä¸€ä»½å·§å…‹åŠ› åå­— = " + order.getName());
 
-		// 3. order ¼ÓÈëÒ»·İÇÉ¿ËÁ¦
+		// 3. order åŠ å…¥ä¸€ä»½å·§å…‹åŠ›
 		order = new Chocolate(order);
-		System.out.println("order ¼ÓÈëÒ»·İÅ£ÄÌ ¼ÓÈë2·İÇÉ¿ËÁ¦   ·ÑÓÃ =" + order.cost());
-		System.out.println("order ¼ÓÈëÒ»·İÅ£ÄÌ ¼ÓÈë2·İÇÉ¿ËÁ¦ Ãû×Ö = " + order.getName());
+		System.out.println("order åŠ å…¥ä¸€ä»½ç‰›å¥¶ åŠ å…¥2ä»½å·§å…‹åŠ›   è´¹ç”¨ =" + order.cost());
+		System.out.println("order åŠ å…¥ä¸€ä»½ç‰›å¥¶ åŠ å…¥2ä»½å·§å…‹åŠ› åå­— = " + order.getName());
 		System.out.println("===========================");
 
 		Drink order2 = new DeCaf();
-		System.out.println("order2 ÎŞÒò¿§·È  ·ÑÓÃ =" + order2.cost());
-		System.out.println("order2 ÎŞÒò¿§·È Ãû×Ö = " + order2.getName());
+		System.out.println("order2 æ— å› å’–å•¡  è´¹ç”¨ =" + order2.cost());
+		System.out.println("order2 æ— å› å’–å•¡ åå­— = " + order2.getName());
 		
 		order2 = new Milk(order2);
-		System.out.println("order2 ÎŞÒò¿§·È ¼ÓÈëÒ»·İÅ£ÄÌ  ·ÑÓÃ =" + order2.cost());
-		System.out.println("order2 ÎŞÒò¿§·È ¼ÓÈëÒ»·İÅ£ÄÌ Ãû×Ö = " + order2.getName());
+		System.out.println("order2 æ— å› å’–å•¡ åŠ å…¥ä¸€ä»½ç‰›å¥¶  è´¹ç”¨ =" + order2.cost());
+		System.out.println("order2 æ— å› å’–å•¡ åŠ å…¥ä¸€ä»½ç‰›å¥¶ åå­— = " + order2.getName());
 	}
 }

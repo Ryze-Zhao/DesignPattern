@@ -2,7 +2,7 @@ package com.zhaolearn.adapter.classadapter;
 
 /**
  *
- * ±»ÊÊÅäµÄÀà£¨µçÄÔµÄUSB£©
+ * è¢«é€‚é…çš„ç±»ï¼ˆç”µè„‘çš„USBï¼‰
  *
  * @author: HeHaoZhao
  * @date: 2020/1/28 15:48
@@ -10,8 +10,8 @@ package com.zhaolearn.adapter.classadapter;
 public class ComputerUsb implements ConnectorType{
 	@Override
 	public int provideUSB() {
-		System.out.println("ÕâÊÇµçÄÔ¶ÔÍâµÄUSB½Ó¿Ú");
-		//µçÄÔUSB½Ó¿Ú·µ»Ø1000mA
+		System.out.println("è¿™æ˜¯ç”µè„‘å¯¹å¤–çš„USBæ¥å£");
+		//ç”µè„‘USBæ¥å£è¿”å›1000mA
 		return 1000;
 	}
 }

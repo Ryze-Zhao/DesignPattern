@@ -2,7 +2,7 @@ package com.zhaolearn.flyweight.improve;
 
 import lombok.*;
 /**
- * Æå×ÓµÄ×ø±ê
+ * æ£‹å­çš„åæ ‡
  * @author: HeHaoZhao
  * @date: 2020/2/3 14:49
  */

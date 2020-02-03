@@ -1,25 +1,25 @@
 package com.zhaolearn.bridge.improve;
 
 
-//ÕÛµşÊ½ÊÖ»úÀà£¬¼Ì³Ğ ³éÏóÀà Phone
+//æŠ˜å å¼æ‰‹æœºç±»ï¼Œç»§æ‰¿ æŠ½è±¡ç±» Phone
 public class FoldedPhone extends Phone {
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public FoldedPhone(Brand brand) {
 		super(brand);
 	}
 	@Override
 	public void open() {
 		super.open();
-		System.out.println(" ÕÛµşÑùÊ½ÊÖ»ú ");
+		System.out.println(" æŠ˜å æ ·å¼æ‰‹æœº ");
 	}
 	@Override
 	public void close() {
 		super.close();
-		System.out.println(" ÕÛµşÑùÊ½ÊÖ»ú ");
+		System.out.println(" æŠ˜å æ ·å¼æ‰‹æœº ");
 	}
 	@Override
 	public void call() {
 		super.call();
-		System.out.println(" ÕÛµşÑùÊ½ÊÖ»ú ");
+		System.out.println(" æŠ˜å æ ·å¼æ‰‹æœº ");
 	}
 }

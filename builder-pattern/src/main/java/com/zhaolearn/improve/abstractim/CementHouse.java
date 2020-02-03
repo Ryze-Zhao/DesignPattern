@@ -1,17 +1,17 @@
 package com.zhaolearn.improve.abstractim;
 
 /**
- * Ë®ÄàÎİ
+ * æ°´æ³¥å±‹
  * @author: HeHaoZhao
  * @date: 2020/1/26 9:31
  */
 public class CementHouse extends HouseBuilder {
 	@Override
-	public void buildBasic() {house.setBaise("Ë®ÄàÎİ´òµØ»ù");System.out.println("Ë®ÄàÎİ´òµØ»ù ");}
+	public void buildBasic() {house.setBaise("æ°´æ³¥å±‹æ‰“åœ°åŸº");System.out.println("æ°´æ³¥å±‹æ‰“åœ°åŸº ");}
 	@Override
-	public void buildWalls() {house.setWall("Ë®ÄàÎİÆöÇ½");System.out.println("Ë®ÄàÎİÆöÇ½ ");}
+	public void buildWalls() {house.setWall("æ°´æ³¥å±‹ç Œå¢™");System.out.println("æ°´æ³¥å±‹ç Œå¢™ ");}
 	@Override
-	public void roofed() { house.setRoofed("Ë®ÄàÎİ·â¶¥");System.out.println("Ë®ÄàÎİ·â¶¥ ");}
+	public void roofed() { house.setRoofed("æ°´æ³¥å±‹å°é¡¶");System.out.println("æ°´æ³¥å±‹å°é¡¶ ");}
 	@Override
 	public House createHouse() {
 		return house;

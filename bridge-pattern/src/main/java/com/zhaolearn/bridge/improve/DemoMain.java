@@ -1,18 +1,18 @@
 package com.zhaolearn.bridge.improve;
 
 /**
- * DemoMain£ºÇÅ½ÓÄ£Ê½µÄµ÷ÓÃÕß
- * ³éÏóÀà£¨Phone£©£ºÎ¬»¤ÁËImplementor£¨½Ó¿Ú£ºBrand£©£¬Ö÷ÒªÎªÆäÊµÏÖÀà£¨HuaWei£¬XiaoMi£©¶şÕßÊÇ¾ÛºÏ¹ØÏµ£¨Phone¾ÛºÏÁËBrand£©£¬¶ø³éÏóÀà£¨Phone£©×÷ÎªÇÅ½ÓÀà
- * FoldedPhone¡¢UpRightPhone×÷Îª³éÏóÀà£¨Phone£©µÄ³éÏóÀà×ÓÀà
- * Brand£ºĞĞÎªÊµÏÖÀàµÄ½Ó¿Ú
- * FoldedPhone¡¢UpRightPhone£ºĞĞÎªµÄ¾ßÌåÊµÏÖÀà
+ * DemoMainï¼šæ¡¥æ¥æ¨¡å¼çš„è°ƒç”¨è€…
+ * æŠ½è±¡ç±»ï¼ˆPhoneï¼‰ï¼šç»´æŠ¤äº†Implementorï¼ˆæ¥å£ï¼šBrandï¼‰ï¼Œä¸»è¦ä¸ºå…¶å®ç°ç±»ï¼ˆHuaWeiï¼ŒXiaoMiï¼‰äºŒè€…æ˜¯èšåˆå…³ç³»ï¼ˆPhoneèšåˆäº†Brandï¼‰ï¼Œè€ŒæŠ½è±¡ç±»ï¼ˆPhoneï¼‰ä½œä¸ºæ¡¥æ¥ç±»
+ * FoldedPhoneã€UpRightPhoneä½œä¸ºæŠ½è±¡ç±»ï¼ˆPhoneï¼‰çš„æŠ½è±¡ç±»å­ç±»
+ * Brandï¼šè¡Œä¸ºå®ç°ç±»çš„æ¥å£
+ * FoldedPhoneã€UpRightPhoneï¼šè¡Œä¸ºçš„å…·ä½“å®ç°ç±»
  *
  * @author: HeHaoZhao
  * @date: 2020/1/29 14:33
  */
 public class DemoMain {
     public static void main(String[] args) {
-        //»ñÈ¡ÕÛµşÊ½ÊÖ»ú (ÑùÊ½ + Æ·ÅÆ )
+        //è·å–æŠ˜å å¼æ‰‹æœº (æ ·å¼ + å“ç‰Œ )
         Phone phone1 = new FoldedPhone(new XiaoMi());
         phone1.open();
         phone1.call();

@@ -2,8 +2,8 @@ package com.zhaolearn.trodition;
 
 public class TroditionDemo {
 	public static void main(String[] args) {
-		//´«Í³µÄ·½·¨
-		Sheep sheep = new Sheep("¶àÀò");
+		//ä¼ ç»Ÿçš„æ–¹æ³•
+		Sheep sheep = new Sheep("å¤šèŽ‰");
 		Sheep sheep2 = new Sheep(sheep.getName());
 		Sheep sheep3 = new Sheep(sheep.getName());
 		Sheep sheep4 = new Sheep(sheep.getName());

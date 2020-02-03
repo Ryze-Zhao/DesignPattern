@@ -2,16 +2,16 @@ package com.zhaolearn.deepclone;
 
 public class Client {
 	public static void main(String[] args) throws Exception {
-		DeepSheep deepSheep= new DeepSheep("Ô­ĞÍÑò",new DeepCattle("´óÅ£", 2));
-		//·½Ê½1 Íê³ÉÉî¿½±´
+		DeepSheep deepSheep= new DeepSheep("åŸå‹ç¾Š",new DeepCattle("å¤§ç‰›", 2));
+		//æ–¹å¼1 å®Œæˆæ·±æ‹·è´
 		DeepSheep deepSheep1 = (DeepSheep) deepSheep.clone();
-		System.out.println("·½Ê½Ò»£ºdeepSheep.name=" + deepSheep.getName() +deepSheep.hashCode()+ "  deepSheep.deepCattle=" + deepSheep.getDeepCattle().hashCode());
-		System.out.println("·½Ê½Ò»£ºdeepSheep1.name=" + deepSheep1.getName() +deepSheep1.hashCode()+ "  deepSheep1.deepCattle=" + deepSheep1.getDeepCattle().hashCode());
+		System.out.println("æ–¹å¼ä¸€ï¼šdeepSheep.name=" + deepSheep.getName() +deepSheep.hashCode()+ "  deepSheep.deepCattle=" + deepSheep.getDeepCattle().hashCode());
+		System.out.println("æ–¹å¼ä¸€ï¼šdeepSheep1.name=" + deepSheep1.getName() +deepSheep1.hashCode()+ "  deepSheep1.deepCattle=" + deepSheep1.getDeepCattle().hashCode());
 		System.out.println("");
 
-		//·½Ê½2 Íê³ÉÉî¿½±´
+		//æ–¹å¼2 å®Œæˆæ·±æ‹·è´
 		DeepSheep deepSheep2 = (DeepSheep) deepSheep.deepClone();
-		System.out.println("·½Ê½¶ş£ºdeepSheep.name=" + deepSheep.getName() +deepSheep.hashCode()+ "  deepSheep.deepCattle=" + deepSheep.getDeepCattle().hashCode());
-		System.out.println("·½Ê½¶ş£ºdeepSheep2.name=" + deepSheep2.getName() +deepSheep2.hashCode()+ "  deepSheep2.deepCattle=" + deepSheep2.getDeepCattle().hashCode());
+		System.out.println("æ–¹å¼äºŒï¼šdeepSheep.name=" + deepSheep.getName() +deepSheep.hashCode()+ "  deepSheep.deepCattle=" + deepSheep.getDeepCattle().hashCode());
+		System.out.println("æ–¹å¼äºŒï¼šdeepSheep2.name=" + deepSheep2.getName() +deepSheep2.hashCode()+ "  deepSheep2.deepCattle=" + deepSheep2.getDeepCattle().hashCode());
 	}
 }

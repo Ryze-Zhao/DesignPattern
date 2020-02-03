@@ -1,23 +1,23 @@
 package com.zhaolearn.improve.abstractim;
 /**
- * 1¡¢³éÏóÀà£¨HouseBuilder£©ÏÈĞ´Ã÷Ä¾ÎİºÍË®ÄàÎİ¹²Í¬µÄ·½·¨£¬ÒÔ¼°´´½¨·½·¨£¬²¢´æÓÚhouseÊôĞÔÖĞ£»
- * 2¡¢Ë®ÄàÎİ£¨CementHouse£©¡¢Ä¾Îİ£¨WoodHouse£©ÊµÏÖ·½·¨£»
- * 3¡¢´´½¨Ö¸»ÓÕß£¨HouseDirector£©£¬ÓÃÓÚÖ¸¶¨ÖÆ×÷Á÷³Ì£¬·µ»Ø²úÆ·£»
- * 4¡¢²âÊÔÀà£¨DemoMain£©£¬Ö±½Ó´´½¨ĞèÒªµÄ²úÆ·¼´¿É¡£
+ * 1ã€æŠ½è±¡ç±»ï¼ˆHouseBuilderï¼‰å…ˆå†™æ˜æœ¨å±‹å’Œæ°´æ³¥å±‹å…±åŒçš„æ–¹æ³•ï¼Œä»¥åŠåˆ›å»ºæ–¹æ³•ï¼Œå¹¶å­˜äºhouseå±æ€§ä¸­ï¼›
+ * 2ã€æ°´æ³¥å±‹ï¼ˆCementHouseï¼‰ã€æœ¨å±‹ï¼ˆWoodHouseï¼‰å®ç°æ–¹æ³•ï¼›
+ * 3ã€åˆ›å»ºæŒ‡æŒ¥è€…ï¼ˆHouseDirectorï¼‰ï¼Œç”¨äºæŒ‡å®šåˆ¶ä½œæµç¨‹ï¼Œè¿”å›äº§å“ï¼›
+ * 4ã€æµ‹è¯•ç±»ï¼ˆDemoMainï¼‰ï¼Œç›´æ¥åˆ›å»ºéœ€è¦çš„äº§å“å³å¯ã€‚
  *
  * @author: HeHaoZhao
  * @date: 2020/1/26 11:47
  */
 public class DemoMain {
 	public static void main(String[] args) {
-		//×¼±¸´´½¨·¿×ÓµÄÖ¸»ÓÕß
+		//å‡†å¤‡åˆ›å»ºæˆ¿å­çš„æŒ‡æŒ¥è€…
 		HouseDirector houseDirector = new HouseDirector();
-		//Íê³É¸Ç·¿×Ó£¬·µ»Ø²úÆ·(ÆÕÍ¨·¿×Ó)
+		//å®Œæˆç›–æˆ¿å­ï¼Œè¿”å›äº§å“(æ™®é€šæˆ¿å­)
 		House house = houseDirector.constructHouse(new WoodHouse());
 
 		System.out.println(house.toString());
 		System.out.println("--------------------------");
-		//ÖØÖÃ½¨ÔìÕß
+		//é‡ç½®å»ºé€ è€…
 		House house1 =houseDirector.constructHouse(new CementHouse());
 		System.out.println(house1.toString());
 	}

@@ -2,21 +2,21 @@ package com.zhaolearn.flyweight.improve;
 
 import java.util.HashMap;
 
-// ChessmanFactoryÊÇÆå×Ó¹¤³§Àà£¬¸ù¾İĞèÒª·µ»ØÒ»¸öÆå×Ó
+// ChessmanFactoryæ˜¯æ£‹å­å·¥å‚ç±»ï¼Œæ ¹æ®éœ€è¦è¿”å›ä¸€ä¸ªæ£‹å­
 public class ChessmanFactory {
-	//¼¯ºÏ£¬ ³äµ±³ØµÄ×÷ÓÃ
+	//é›†åˆï¼Œ å……å½“æ± çš„ä½œç”¨
 	private HashMap<String, GoChessman> poolGoChessman = new HashMap<>();
 	
-	//¸ù¾İÆå×ÓµÄÀàĞÍ£¬·µ»ØÒ»¸öÆå×Ó, Èç¹ûÃ»ÓĞ¾Í´´½¨Ò»¸öÆå×Ó£¬²¢·ÅÈëµ½³ØÖĞ,²¢·µ»Ø
+	//æ ¹æ®æ£‹å­çš„ç±»å‹ï¼Œè¿”å›ä¸€ä¸ªæ£‹å­, å¦‚æœæ²¡æœ‰å°±åˆ›å»ºä¸€ä¸ªæ£‹å­ï¼Œå¹¶æ”¾å…¥åˆ°æ± ä¸­,å¹¶è¿”å›
 	public Chessman getGoChessman(String color) {
 		if(!poolGoChessman.containsKey(color)) {
-			//¾Í´´½¨Ò»¸öÍøÕ¾£¬²¢·ÅÈëµ½³ØÖĞ
+			//å°±åˆ›å»ºä¸€ä¸ªç½‘ç«™ï¼Œå¹¶æ”¾å…¥åˆ°æ± ä¸­
 			poolGoChessman.put(color, new GoChessman(color));
 		}
 		return (Chessman)poolGoChessman.get(color);
 	}
 	
-	//»ñÈ¡Æå×ÓµÄ×ÜÊı (³ØÖĞÓĞ¶àÉÙ¸öÆå×ÓÀàĞÍ)
+	//è·å–æ£‹å­çš„æ€»æ•° (æ± ä¸­æœ‰å¤šå°‘ä¸ªæ£‹å­ç±»å‹)
 	public int getGoChessmanCount() {
 		return poolGoChessman.size();
 	}

@@ -2,7 +2,7 @@ package com.zhaolearn.adapter.classadapter;
 
 
 /**
- * ÊÊÅäÆ÷Àà£¨¶Á¿¨Æ÷£©£¬½øĞĞÊÊÅä²Ù×÷¡£
+ * é€‚é…å™¨ç±»ï¼ˆè¯»å¡å™¨ï¼‰ï¼Œè¿›è¡Œé€‚é…æ“ä½œã€‚
  *
  * @author: HeHaoZhao
  * @date: 2020/1/28 16:11
@@ -10,9 +10,9 @@ package com.zhaolearn.adapter.classadapter;
 public class UsbAdapter extends ComputerUsb implements CardReader {
     @Override
     public int sdConnectUSB() {
-        //ÕâÀïÖ»ÊÇÄ£ÄâÊµ¼ÊµçÁ÷½µÁ÷¡£
+        //è¿™é‡Œåªæ˜¯æ¨¡æ‹Ÿå®é™…ç”µæµé™æµã€‚
         int electricCurrent = super.provideUSB() / 2;
-        System.out.println("¶Á¿¨Æ÷Á¬½ÓÖÁUSB½Ó¿Ú£¬²¢½«µçÁ÷½µµÍÎª500mA");
+        System.out.println("è¯»å¡å™¨è¿æ¥è‡³USBæ¥å£ï¼Œå¹¶å°†ç”µæµé™ä½ä¸º500mA");
         return electricCurrent;
     }
 }

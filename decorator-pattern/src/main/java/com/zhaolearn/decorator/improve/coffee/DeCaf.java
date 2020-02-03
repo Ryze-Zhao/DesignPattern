@@ -2,7 +2,7 @@ package com.zhaolearn.decorator.improve.coffee;
 
 public class DeCaf extends Coffee {
 	public DeCaf() {
-		setName(" ÎÞÒò¿§·È ");
+		setName(" æ— å› å’–å•¡ ");
 		setPrice(1.0f);
 	}
 }

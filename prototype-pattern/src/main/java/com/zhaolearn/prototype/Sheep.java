@@ -12,7 +12,7 @@ public class Sheep implements Cloneable {
     public Sheep(String name) {
         this.name = name;
     }
-    //¿ËÂ¡¸ÃÊµÀı£¬Ê¹ÓÃÄ¬ÈÏµÄclone·½·¨À´Íê³É
+    //å…‹éš†è¯¥å®ä¾‹ï¼Œä½¿ç”¨é»˜è®¤çš„cloneæ–¹æ³•æ¥å®Œæˆ
     @Override
     protected Object clone() {
         Sheep sheep = null;

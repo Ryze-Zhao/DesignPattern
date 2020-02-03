@@ -1,26 +1,26 @@
 package com.zhaolearn.adapter.objectadapter;
 
 /**
- * ¶ÔÏóÊÊÅäÆ÷£º
- * ÎÒÃÇÐèÒªÁîSD¿¨Á¬½Óµ½µçÄÔUSB£¬µ«ÊÇÎÞ·¨Ö±½ÓÁ¬½Ó£¬ÏÖÊµÖÐÎÒÃÇ»áÊ¹ÓÃ¶Á¿¨Æ÷½øÐÐÊÊÅä¡££¨²¢ÇÒ½«µçÁ÷´Ó1A½µµÍÒ»°ë£©
- * ¶ÔÏóÊÊÅäÆ÷£¬Ïà¶ÔÓÚÀàÊÊÅäÆ÷£¬±ãÊÇ½«UsbAdapter¼Ì³ÐComputerUsb¸ÄÎª¾ÛºÏComputerUsb£¨Êµ¼Ê¾ÛºÏÊ¹ÓÃÆä½Ó¿Ú¼´¿ÉConnectorType£©
+ * å¯¹è±¡é€‚é…å™¨ï¼š
+ * æˆ‘ä»¬éœ€è¦ä»¤SDå¡è¿žæŽ¥åˆ°ç”µè„‘USBï¼Œä½†æ˜¯æ— æ³•ç›´æŽ¥è¿žæŽ¥ï¼ŒçŽ°å®žä¸­æˆ‘ä»¬ä¼šä½¿ç”¨è¯»å¡å™¨è¿›è¡Œé€‚é…ã€‚ï¼ˆå¹¶ä¸”å°†ç”µæµä»Ž1Aé™ä½Žä¸€åŠï¼‰
+ * å¯¹è±¡é€‚é…å™¨ï¼Œç›¸å¯¹äºŽç±»é€‚é…å™¨ï¼Œä¾¿æ˜¯å°†UsbAdapterç»§æ‰¿ComputerUsbæ”¹ä¸ºèšåˆComputerUsbï¼ˆå®žé™…èšåˆä½¿ç”¨å…¶æŽ¥å£å³å¯ConnectorTypeï¼‰
  *
  *
  *
- * ¹ý³Ì£º
- * 1¡¢ÎÒÃÇÐèÒª½«SD¿¨Á¬½ÓÖÁµçÄÔµÄUSB½Ó¿Ú
- * 2¡¢ÏÈ½¨Á¢Ò»¸öComputerUsbÀà£¬´ú±íµçÄÔÌá¹©µÄÒ»¸öUSB½Ó¿Ú
- * 3¡¢ÔÙ½¨Á¢Ò»¸ö¶Á¿¨Æ÷½Ó¿Ú£¨CardReader£©£¬²¢Ìá¹©¶àÖÖ¶Á¿¨Æ÷½Ó¿Ú£¨ÈçSD¿¨¡¢MMCµÈ£©
- * 4¡¢½¨Á¢USB×ª»»Æ÷Àà£¨UsbAdapter£©£¬ÊµÏÖ¶Á¿¨Æ÷½Ó¿Ú£¨CardReader£©£¬²¢¾ÛºÏComputerUsbÀà£¬
+ * è¿‡ç¨‹ï¼š
+ * 1ã€æˆ‘ä»¬éœ€è¦å°†SDå¡è¿žæŽ¥è‡³ç”µè„‘çš„USBæŽ¥å£
+ * 2ã€å…ˆå»ºç«‹ä¸€ä¸ªComputerUsbç±»ï¼Œä»£è¡¨ç”µè„‘æä¾›çš„ä¸€ä¸ªUSBæŽ¥å£
+ * 3ã€å†å»ºç«‹ä¸€ä¸ªè¯»å¡å™¨æŽ¥å£ï¼ˆCardReaderï¼‰ï¼Œå¹¶æä¾›å¤šç§è¯»å¡å™¨æŽ¥å£ï¼ˆå¦‚SDå¡ã€MMCç­‰ï¼‰
+ * 4ã€å»ºç«‹USBè½¬æ¢å™¨ç±»ï¼ˆUsbAdapterï¼‰ï¼Œå®žçŽ°è¯»å¡å™¨æŽ¥å£ï¼ˆCardReaderï¼‰ï¼Œå¹¶èšåˆComputerUsbç±»ï¼Œ
  *
  * @author: HeHaoZhao
  * @date: 2020/1/28 15:15
  */
 public class DemoMain{
 	public static void main(String[] args) {
-		System.out.println(" === ¶ÔÏóÊÊÅäÆ÷Ä£Ê½ ====");
+		System.out.println(" === å¯¹è±¡é€‚é…å™¨æ¨¡å¼ ====");
 		SDCard sdCard = new SDCard();
-		//¶ÔÏóÊÊÅäÆ÷¸ü¸Ä£ºÕâÀïÇÐ»»Ê¹ÓÃ¹¹ÔìÆ÷·ÅÈë¶ÔÏóÊôÐÔ¼´¿É¡£
+		//å¯¹è±¡é€‚é…å™¨æ›´æ”¹ï¼šè¿™é‡Œåˆ‡æ¢ä½¿ç”¨æž„é€ å™¨æ”¾å…¥å¯¹è±¡å±žæ€§å³å¯ã€‚
 		sdCard.charging(new UsbAdapter(new ComputerUsb()));
 	}
 }

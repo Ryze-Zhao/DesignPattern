@@ -1,18 +1,18 @@
 package com.zhaolearn.adapter.objectadapter;
 
 /**
- * Ä¿±êÀà£ºSD¿¨
+ * ç›®æ ‡ç±»ï¼šSDå¡
  * @author: HeHaoZhao
  * @date: 2020/1/28 15:07
  */
 public class SDCard {
 	public void charging(UsbAdapter usbAdapter) {
 		int electricCurrent= usbAdapter.sdConnectUSB();
-		//¶Á¿¨Æ÷½«µçÁ÷½µÖÁ500mA£¬²Å¿ÉÒÔÕı³£Ê¹ÓÃ£¬Èç¹û²»ÊÇµÄ»°£¬¾Í²»ÄÜÕı³£¹¤×÷
+		//è¯»å¡å™¨å°†ç”µæµé™è‡³500mAï¼Œæ‰å¯ä»¥æ­£å¸¸ä½¿ç”¨ï¼Œå¦‚æœä¸æ˜¯çš„è¯ï¼Œå°±ä¸èƒ½æ­£å¸¸å·¥ä½œ
 		if(electricCurrent == 500) {
-			System.out.println("µçÁ÷Îª"+electricCurrent+"ÊÊºÏÊ¹ÓÃ£¡");
+			System.out.println("ç”µæµä¸º"+electricCurrent+"é€‚åˆä½¿ç”¨ï¼");
 		} else {
-			System.out.println("µçÁ÷²»Îª500mA£¬SD¿¨²»ÄÜÕı³£¹¤×÷");
+			System.out.println("ç”µæµä¸ä¸º500mAï¼ŒSDå¡ä¸èƒ½æ­£å¸¸å·¥ä½œ");
 		}
 	}
 }

@@ -2,11 +2,11 @@ package com.zhaolearn.decorator.improve.seasoning;
 
 import com.zhaolearn.decorator.improve.Drink;
 
-//¾ßÌåµÄDecorator£¬ ÕâÀï¾ÍÊÇµ÷Î¶Æ·
+//å…·ä½“çš„Decoratorï¼Œ è¿™é‡Œå°±æ˜¯è°ƒå‘³å“
 public class Chocolate extends Decorator {
 	public Chocolate(Drink drink) {
 		super(drink);
-		setName(" ÇÉ¿ËÁ¦ ");
-		setPrice(3.0f); // µ÷Î¶Æ· µÄ¼Û¸ñ
+		setName(" å·§å…‹åŠ› ");
+		setPrice(3.0f); // è°ƒå‘³å“ çš„ä»·æ ¼
 	}
 }
