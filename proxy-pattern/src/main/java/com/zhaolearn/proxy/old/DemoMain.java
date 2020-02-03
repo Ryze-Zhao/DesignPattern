@@ -1,16 +1,7 @@
-package com.zhaolearn.prox;
+package com.zhaolearn.proxy.old;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTestProx
-{
-    @Test
-    public void appTestProx() {
+public class DemoMain {
+    public static void main(String[] args) {
         File image = new ProxFile("test_filename");
         //第一次加载会显示正在从磁盘加载文件：
         image.loadFile();

@@ -22,7 +22,7 @@
         <module>decorator-pattern</module>
         <module>facade-pattern</module>
         <module>flyweight-pattern</module>
-        <module>prox-pattern</module>
+        <module>proxy-pattern</module>
         <module>chain-of-esponsibility-pattern</module>
         <module>command-pattern</module>
         <module>interpreter-pattern</module>

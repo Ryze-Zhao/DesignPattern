@@ -1,4 +1,4 @@
-package com.zhaolearn.prox;
+package com.zhaolearn.proxy.old;
 
 public class ProxFile implements File {
     private String fileName;

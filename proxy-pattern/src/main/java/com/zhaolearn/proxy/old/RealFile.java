@@ -1,4 +1,4 @@
-package com.zhaolearn.prox;
+package com.zhaolearn.proxy.old;
 
 public class RealFile implements File {
     private String fileName;
