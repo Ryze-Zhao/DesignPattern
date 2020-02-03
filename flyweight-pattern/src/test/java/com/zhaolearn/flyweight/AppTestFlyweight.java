@@ -2,6 +2,8 @@ package com.zhaolearn.flyweight;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.flyweight.old.FruitFactory;
+import com.zhaolearn.flyweight.old.Orange;
 import org.junit.Test;
 
 /**
@@ -13,7 +15,7 @@ public class AppTestFlyweight {
     @Test
     public void appTestFlyweight() {
             for(int i=0; i < 10; ++i) {
-                Orange orange = (Orange)FruitFactory.getOrange(getRandomName());
+                Orange orange = (Orange) FruitFactory.getOrange(getRandomName());
                orange.setColor(getRandomColor());
                orange.tellMeNameAndColor();
             }

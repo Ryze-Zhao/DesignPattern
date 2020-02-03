@@ -1,4 +1,4 @@
-package com.zhaolearn.flyweight;
+package com.zhaolearn.flyweight.old;
 
 import java.util.HashMap;
 
