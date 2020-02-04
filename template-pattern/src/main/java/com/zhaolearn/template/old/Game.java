@@ -1,4 +1,4 @@
-package com.zhaolearn.template;
+package com.zhaolearn.template.old;
 
 
 public abstract class Game {

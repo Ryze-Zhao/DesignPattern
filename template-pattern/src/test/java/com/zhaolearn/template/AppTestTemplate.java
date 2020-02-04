@@ -2,6 +2,9 @@ package com.zhaolearn.template;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.template.old.BasketBall;
+import com.zhaolearn.template.old.FootBall;
+import com.zhaolearn.template.old.Game;
 import org.junit.Test;
 
 

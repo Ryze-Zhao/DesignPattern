@@ -1,4 +1,4 @@
-package com.zhaolearn.template;
+package com.zhaolearn.template.old;
 
 public class FootBall extends Game {
     @Override

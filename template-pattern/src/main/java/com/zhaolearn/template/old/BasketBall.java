@@ -1,6 +1,4 @@
-package com.zhaolearn.template;
-
-import java.lang.management.GarbageCollectorMXBean;
+package com.zhaolearn.template.old;
 
 public class BasketBall extends Game {
     @Override
