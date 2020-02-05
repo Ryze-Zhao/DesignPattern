@@ -2,6 +2,10 @@ package com.zhaolearn.command;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.command.old.Broker;
+import com.zhaolearn.command.old.BuyClass;
+import com.zhaolearn.command.old.RequestClass;
+import com.zhaolearn.command.old.SellClass;
 import org.junit.Test;
 
 /**

@@ -1,4 +1,4 @@
-package com.zhaolearn.command;
+package com.zhaolearn.command.old;
 
 public class BuyClass implements Command {
     private RequestClass requestClass;

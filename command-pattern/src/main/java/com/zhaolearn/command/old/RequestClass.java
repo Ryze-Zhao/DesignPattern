@@ -1,4 +1,4 @@
-package com.zhaolearn.command;
+package com.zhaolearn.command.old;
 
 /**
  * Hello world!

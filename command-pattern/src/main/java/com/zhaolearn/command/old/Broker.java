@@ -1,4 +1,4 @@
-package com.zhaolearn.command;
+package com.zhaolearn.command.old;
 
 import java.util.ArrayList;
 import java.util.List;
