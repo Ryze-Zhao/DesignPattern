@@ -31,5 +31,11 @@ public class DemoMain {
         //具体访问者B，去除元素B操作
         ConcreteVisitorB concreteVisitorB = new ConcreteVisitorB();
         os.accept(concreteVisitorB);
+
+        System.out.println("------------------------------");
+        //具体访问者C
+        ConcreteVisitorC concreteVisitorC = new ConcreteVisitorC();
+        os.accept(concreteVisitorC);
+
     }
 }
