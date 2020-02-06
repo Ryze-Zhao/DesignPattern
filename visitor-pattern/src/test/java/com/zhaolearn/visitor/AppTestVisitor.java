@@ -2,6 +2,10 @@ package com.zhaolearn.visitor;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.visitor.old.Computer;
+import com.zhaolearn.visitor.old.ComputerPart;
+import com.zhaolearn.visitor.old.ComputerPartDisplay2Visitor;
+import com.zhaolearn.visitor.old.ComputerPartDisplayVisitor;
 import org.junit.Test;
 
 /**

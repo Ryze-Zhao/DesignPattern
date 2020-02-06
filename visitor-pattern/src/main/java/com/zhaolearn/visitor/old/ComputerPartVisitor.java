@@ -1,4 +1,4 @@
-package com.zhaolearn.visitor;
+package com.zhaolearn.visitor.old;
 
 public interface ComputerPartVisitor {
     public void visit(Computer computer);

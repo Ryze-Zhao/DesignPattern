@@ -1,4 +1,4 @@
-package com.zhaolearn.visitor;
+package com.zhaolearn.visitor.old;
 
 public class Computer implements ComputerPart {
     ComputerPart[] parts;
