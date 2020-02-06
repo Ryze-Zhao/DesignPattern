@@ -2,6 +2,9 @@ package com.zhaolearn.iterator;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.iterator.old.Iterator;
+import com.zhaolearn.iterator.old.MyStudentRepository;
+import com.zhaolearn.iterator.old.Student;
 import org.junit.Test;
 
 /**
@@ -13,11 +16,6 @@ public class AppTestIterator {
      */
     @Test
     public void appTestIterator() {
-        MyStudentRepository myStudentRepository = new MyStudentRepository();
-        Iterator aa = myStudentRepository.iterator();
-        while (aa.hasNext()) {
-            Student bb = (Student) aa.next();
-            System.out.println(bb.toString());
-        }
+
     }
 }
