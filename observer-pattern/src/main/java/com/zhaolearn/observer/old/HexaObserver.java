@@ -1,4 +1,4 @@
-package com.zhaolearn.observer;
+package com.zhaolearn.observer.old;
 
 public class HexaObserver extends Observer{
     public HexaObserver(Subject subject){

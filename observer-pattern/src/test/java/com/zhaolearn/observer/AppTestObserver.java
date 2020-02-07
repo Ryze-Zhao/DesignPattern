@@ -2,6 +2,10 @@ package com.zhaolearn.observer;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.observer.old.BinaryObserver;
+import com.zhaolearn.observer.old.HexaObserver;
+import com.zhaolearn.observer.old.OctalObserver;
+import com.zhaolearn.observer.old.Subject;
 import org.junit.Test;
 
 /**

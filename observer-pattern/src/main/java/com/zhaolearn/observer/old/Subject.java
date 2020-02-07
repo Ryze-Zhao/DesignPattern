@@ -1,4 +1,4 @@
-package com.zhaolearn.observer;
+package com.zhaolearn.observer.old;
 
 import java.util.ArrayList;
 import java.util.List;
