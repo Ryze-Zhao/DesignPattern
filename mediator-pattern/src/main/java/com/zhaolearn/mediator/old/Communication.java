@@ -1,6 +1,4 @@
-package com.zhaolearn.mediator;
-
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+package com.zhaolearn.mediator.old;
 
 public class Communication {
     public static void communication(User user, String content) {

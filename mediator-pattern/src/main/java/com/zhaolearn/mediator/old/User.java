@@ -1,4 +1,4 @@
-package com.zhaolearn.mediator;
+package com.zhaolearn.mediator.old;
 
 public class User {
     private String name;

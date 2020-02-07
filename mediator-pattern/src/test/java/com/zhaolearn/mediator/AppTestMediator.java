@@ -2,6 +2,7 @@ package com.zhaolearn.mediator;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.mediator.old.User;
 import org.junit.Test;
 
 /**
