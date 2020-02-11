@@ -1,4 +1,4 @@
-package com.zhaolearn.interpreter;
+package com.zhaolearn.interpreter.old;
 
 public class TerminalExpression implements Expression {
     private String data;
