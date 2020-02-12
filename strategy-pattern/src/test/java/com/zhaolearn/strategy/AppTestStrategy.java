@@ -2,6 +2,10 @@ package com.zhaolearn.strategy;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.strategy.old.AddOperation;
+import com.zhaolearn.strategy.old.Context;
+import com.zhaolearn.strategy.old.MultiplyOperation;
+import com.zhaolearn.strategy.old.SubOperation;
 import org.junit.Test;
 
 /**

@@ -1,4 +1,4 @@
-package com.zhaolearn.strategy;
+package com.zhaolearn.strategy.old;
 
 
 public class SubOperation implements Strategy{

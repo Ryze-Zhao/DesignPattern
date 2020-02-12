@@ -1,4 +1,4 @@
-package com.zhaolearn.strategy;
+package com.zhaolearn.strategy.old;
 
 public interface Strategy {
     public int doOperation(int num1,int num2);
