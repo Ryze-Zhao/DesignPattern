@@ -1,16 +1,16 @@
-package com.zhaolearn.state;
+package com.zhaolearn.state.old;
 
 /**
  * Hello world!
  *
  */
-public class StopState implements State {
+public class StartState implements State {
     public String toString(){
-        return "Stop State";
+        return "Start State";
     }
     @Override
     public void doAction(Context context) {
-        System.out.println("Player is in stop state");
+        System.out.println("Player is in start state");
         context.setState(this);
     }
 }

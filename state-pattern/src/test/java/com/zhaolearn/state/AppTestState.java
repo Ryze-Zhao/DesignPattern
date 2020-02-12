@@ -2,6 +2,10 @@ package com.zhaolearn.state;
 
 import static org.junit.Assert.assertTrue;
 
+import com.zhaolearn.state.old.Context;
+import com.zhaolearn.state.old.StartState;
+import com.zhaolearn.state.old.State;
+import com.zhaolearn.state.old.StopState;
 import org.junit.Test;
 
 /**
