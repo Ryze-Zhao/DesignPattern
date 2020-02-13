@@ -1,4 +1,4 @@
-package com.zhaolearn.chainofesponsibility;
+package com.zhaolearn.chainofesponsibility.old;
 
 public class DebugLogger extends AbstractLogger {
     public DebugLogger(int level){

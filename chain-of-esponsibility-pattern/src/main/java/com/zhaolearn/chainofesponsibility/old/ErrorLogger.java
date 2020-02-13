@@ -1,4 +1,4 @@
-package com.zhaolearn.chainofesponsibility;
+package com.zhaolearn.chainofesponsibility.old;
 
 public class ErrorLogger extends AbstractLogger {
     public ErrorLogger(int level){
