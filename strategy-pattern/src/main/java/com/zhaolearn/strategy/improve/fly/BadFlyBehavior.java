@@ -1,4 +1,4 @@
-package com.zhaolearn.strategy.improve;
+package com.zhaolearn.strategy.improve.fly;
 
 public class BadFlyBehavior implements FlyBehavior {
 	@Override

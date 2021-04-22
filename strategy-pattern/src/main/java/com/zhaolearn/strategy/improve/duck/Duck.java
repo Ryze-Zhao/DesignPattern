@@ -1,7 +1,8 @@
-package com.zhaolearn.strategy.improve;
+package com.zhaolearn.strategy.improve.duck;
 
 
-import lombok.AllArgsConstructor;
+import com.zhaolearn.strategy.improve.fly.FlyBehavior;
+import com.zhaolearn.strategy.improve.quack.QuackBehavior;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 

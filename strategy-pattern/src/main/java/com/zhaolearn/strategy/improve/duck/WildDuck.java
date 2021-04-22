@@ -1,4 +1,6 @@
-package com.zhaolearn.strategy.improve;
+package com.zhaolearn.strategy.improve.duck;
+
+import com.zhaolearn.strategy.improve.fly.GoodFlyBehavior;
 
 public class WildDuck extends Duck {
 	//构造器，传入FlyBehavor 的对象

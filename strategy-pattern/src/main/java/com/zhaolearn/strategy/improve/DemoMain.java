@@ -1,5 +1,10 @@
 package com.zhaolearn.strategy.improve;
 
+import com.zhaolearn.strategy.improve.duck.PekingDuck;
+import com.zhaolearn.strategy.improve.duck.ToyDuck;
+import com.zhaolearn.strategy.improve.duck.WildDuck;
+import com.zhaolearn.strategy.improve.fly.NoFlyBehavior;
+
 public class DemoMain {
 	public static void main(String[] args) {
 		WildDuck wildDuck = new WildDuck();

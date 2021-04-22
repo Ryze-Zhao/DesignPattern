@@ -1,4 +1,6 @@
-package com.zhaolearn.strategy.improve;
+package com.zhaolearn.strategy.improve.duck;
+
+import com.zhaolearn.strategy.improve.fly.BadFlyBehavior;
 
 public class PekingDuck extends Duck {
 	//假如北京鸭可以飞翔，但是飞翔技术一般
