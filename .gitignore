@@ -1,0 +1,60 @@
+.gradle
+/build/
+/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+/**/out/
+.shelf/
+.ideaDataSources/
+dataSources/
+
+# Maven
+target/
+*.ser
+*.ec
+docs/
+/**/.mvn/
+mvnw
+mvnw.cmd
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+velocity.log
+*.log
+.apt_generated
+.factorypath
+*.ini
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/node_modules/
+
+### OS ###
+.DS_Store
+
+### jrebel
+.rebel.xml.bak
+rebel.xml
+
